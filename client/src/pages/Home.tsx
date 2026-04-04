@@ -123,8 +123,9 @@ export default function Home() {
             <h1 className="text-lg font-semibold text-primary">Holy Ganges Dorms</h1>
           </div>
           <nav className="hidden md:flex gap-8">
-            <a href="#map" className="text-sm hover:text-primary transition-colors">Map</a>
-            <a href="#food" className="text-sm hover:text-primary transition-colors">Food</a>
+            <a href="#map" className="text-sm hover:text-primary transition-colors">Walking Map</a>
+            <a href="#food" className="text-sm hover:text-primary transition-colors">Street Food</a>
+            <a href="#shopping" className="text-sm hover:text-primary transition-colors">Treasures</a>
             <a href="#aarti" className="text-sm hover:text-primary transition-colors">Aarti</a>
           </nav>
         </div>
@@ -511,14 +512,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Shopping Recommendations Section */}
-      <section className="section-divider container py-16 md:py-24">
-        <div className="mb-12">
-          <h2 className="section-heading">Shopping Recommendations</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            Discover authentic Varanasi craftsmanship. These trusted shops offer premium handwoven textiles and traditional Benarasi sarees at fair prices.
-          </p>
-        </div>
+      {/* Shopping Section - Treasures */}
+      <section id="shopping" className="section-divider bg-secondary/20 py-16 md:py-24">
+        <div className="container">
+          <div className="mb-12">
+            <h2 className="section-heading">Treasures of Varanasi</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              Discover authentic Varanasi craftsmanship. These trusted shops offer premium handwoven textiles and traditional Benarasi sarees at fair prices.
+            </p>
+          </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Shop 1 */}
@@ -561,6 +563,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Footer */}
@@ -576,8 +579,9 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#map" className="hover:text-primary transition-colors">Map</a></li>
-                <li><a href="#food" className="hover:text-primary transition-colors">Food</a></li>
+                <li><a href="#map" className="hover:text-primary transition-colors">Walking Map</a></li>
+                <li><a href="#food" className="hover:text-primary transition-colors">Street Food</a></li>
+                <li><a href="#shopping" className="hover:text-primary transition-colors">Treasures</a></li>
                 <li><a href="#aarti" className="hover:text-primary transition-colors">Aarti</a></li>
               </ul>
             </div>

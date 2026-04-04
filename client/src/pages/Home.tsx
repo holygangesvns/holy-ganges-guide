@@ -20,6 +20,8 @@ export default function Home() {
     const dashashwamedh = { lat: 25.30624577674882, lng: 83.01023012819441 };
     const pahalwanLassi = { lat: 25.289820633466604, lng: 83.0047329131514 };
     const bharatSilkHouse = { lat: 25.296459282055686, lng: 82.99785655692435 };
+    const jaikaraSilkHouse = { lat: 25.324138644934663, lng: 83.00345620358699 };
+    const shreeJi = { lat: 25.315965756271098, lng: 83.01631345331059 };
     
     // Set map center to Holy Ganges Dorms
     map.setCenter(holyGangesDorms);
@@ -58,6 +60,20 @@ export default function Home() {
       position: bharatSilkHouse,
       map: map,
       title: 'Bharat Silk House',
+      icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
+    });
+    
+    const jaikaraMarker = new google.maps.Marker({
+      position: jaikaraSilkHouse,
+      map: map,
+      title: 'Jaikara Silk House',
+      icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
+    });
+    
+    const shreeJiMarker = new google.maps.Marker({
+      position: shreeJi,
+      map: map,
+      title: 'Shree Ji',
       icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
     });
     
@@ -102,10 +118,8 @@ export default function Home() {
       {/* Navigation Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         <div className="container py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">HG</span>
-            </div>
+          <div className="flex items-center gap-3">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/1_a6b69119.jpg" alt="Holy Ganges Dorms" className="w-10 h-10 rounded-full object-cover" />
             <h1 className="text-lg font-semibold text-primary">Holy Ganges Dorms</h1>
           </div>
           <nav className="hidden md:flex gap-8">
@@ -231,19 +245,19 @@ export default function Home() {
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">2</div>
-                <h3 className="text-2xl font-semibold text-primary">Bharat Silk House</h3>
+                <h3 className="text-2xl font-semibold text-primary">Shree Ji</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                <strong>Location:</strong> Bhelupura, near Brahmakumari Vishwavidyalaya
+                <strong>Location:</strong> Near Dashashwamedh Ghat
               </p>
               <p className="text-muted-foreground mb-4">
-                <strong>Specialty:</strong> Premium Benarasi silk sarees and traditional handwoven textiles
+                <strong>Specialty:</strong> Traditional Varanasi street food and sweets
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                Established in 1980, Bharat Silk House is renowned as one of Varanasi's finest Benarasi saree wholesalers. With a perfect 5.0 rating on Google and over 576 customer reviews, they offer authentic handwoven sarees at wholesale prices. The polite staff and fair pricing (no travel agents allowed) make it a trusted destination for genuine Benarasi silk.
+                A beloved local favorite known for authentic Banarasi cuisine and traditional sweets. Shree Ji offers an intimate glimpse into Varanasi's culinary heritage with generous portions and honest prices. Perfect for experiencing genuine local flavors in a welcoming atmosphere.
               </p>
               <p className="text-sm font-semibold text-primary">
-                Best time: Morning to afternoon for browsing
+                Best time: Morning to evening
               </p>
             </div>
 
@@ -493,6 +507,58 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Shopping Recommendations Section */}
+      <section className="section-divider container py-16 md:py-24">
+        <div className="mb-12">
+          <h2 className="section-heading">Shopping Recommendations</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl">
+            Discover authentic Varanasi craftsmanship. These trusted shops offer premium handwoven textiles and traditional Benarasi sarees at fair prices.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Shop 1 */}
+          <div className="timing-card fade-in">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="food-badge">1</div>
+              <h3 className="text-2xl font-semibold text-primary">Bharat Silk House</h3>
+            </div>
+            <p className="text-muted-foreground mb-4">
+              <strong>Location:</strong> Bhelupura, near Brahmakumari Vishwavidyalaya
+            </p>
+            <p className="text-muted-foreground mb-4">
+              <strong>Specialty:</strong> Premium Benarasi silk sarees and traditional handwoven textiles
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              Established in 1980, Bharat Silk House is renowned as one of Varanasi's finest Benarasi saree wholesalers. With a perfect 5.0 rating on Google and over 576 customer reviews, they offer authentic handwoven sarees at wholesale prices. The polite staff and fair pricing (no travel agents allowed) make it a trusted destination for genuine Benarasi silk.
+            </p>
+            <p className="text-sm font-semibold text-primary">
+              Best time: Morning to afternoon
+            </p>
+          </div>
+
+          {/* Shop 2 */}
+          <div className="timing-card fade-in">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="food-badge">2</div>
+              <h3 className="text-2xl font-semibold text-primary">Jaikara Silk House</h3>
+            </div>
+            <p className="text-muted-foreground mb-4">
+              <strong>Location:</strong> Central Varanasi
+            </p>
+            <p className="text-muted-foreground mb-4">
+              <strong>Specialty:</strong> Authentic Benarasi sarees and silk textiles
+            </p>
+            <p className="text-sm text-muted-foreground mb-4">
+              A trusted name in Varanasi's textile industry, Jaikara Silk House offers a wide selection of traditional Benarasi sarees with intricate zari work and authentic patterns. Known for quality craftsmanship and competitive pricing, it's an excellent destination for both retail and wholesale purchases of genuine handwoven silk.
+            </p>
+            <p className="text-sm font-semibold text-primary">
+              Best time: Morning to afternoon
+            </p>
           </div>
         </div>
       </section>

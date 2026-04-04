@@ -13,13 +13,13 @@ import { MapView } from '@/components/Map';
 export default function Home() {
   const handleMapReady = (map: google.maps.Map) => {
     // Holy Ganges Dorms coordinates (Assi Ghat area)
-    const holyGangesDorms = { lat: 25.3109, lng: 82.9956 };
+    const holyGangesDorms = { lat: 25.29666039994198, lng: 82.99789490933955 };
     
     // Key destinations
-    const assiGhat = { lat: 25.3099, lng: 82.9956 };
-    const dashashwamedh = { lat: 25.3209, lng: 83.0099 };
-    const pahalwanLassi = { lat: 25.3180, lng: 83.0080 };
-    const bhokalChaat = { lat: 25.3099, lng: 82.9956 };
+    const assiGhat = { lat: 25.28876188346205, lng: 83.00683457105292 };
+    const dashashwamedh = { lat: 25.30624577674882, lng: 83.01023012819441 };
+    const pahalwanLassi = { lat: 25.289820633466604, lng: 83.0047329131514 };
+    const bharatSilkHouse = { lat: 25.296459282055686, lng: 82.99785655692435 };
     
     // Set map center to Holy Ganges Dorms
     map.setCenter(holyGangesDorms);
@@ -54,10 +54,10 @@ export default function Home() {
       icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
     });
     
-    const bhokalMarker = new google.maps.Marker({
-      position: bhokalChaat,
+    const bharatMarker = new google.maps.Marker({
+      position: bharatSilkHouse,
       map: map,
-      title: 'Bhokal Chaat',
+      title: 'Bharat Silk House',
       icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
     });
     
@@ -231,19 +231,19 @@ export default function Home() {
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">2</div>
-                <h3 className="text-2xl font-semibold text-primary">Bhokal Chaat</h3>
+                <h3 className="text-2xl font-semibold text-primary">Bharat Silk House</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                <strong>Location:</strong> Right on Assi Ghat
+                <strong>Location:</strong> Bhelupura, near Brahmakumari Vishwavidyalaya
               </p>
               <p className="text-muted-foreground mb-4">
-                <strong>Specialty:</strong> Street chaat (savory snacks) with multiple flavors
+                <strong>Specialty:</strong> Premium Benarasi silk sarees and traditional handwoven textiles
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                This small stall entices you the moment you walk past with multiple flavors wafting through the air. The chaat here is crispy, flavorful, and authentic—made fresh to order.
+                Established in 1980, Bharat Silk House is renowned as one of Varanasi's finest Benarasi saree wholesalers. With a perfect 5.0 rating on Google and over 576 customer reviews, they offer authentic handwoven sarees at wholesale prices. The polite staff and fair pricing (no travel agents allowed) make it a trusted destination for genuine Benarasi silk.
               </p>
               <p className="text-sm font-semibold text-primary">
-                Best time: Evening after ghat exploration
+                Best time: Morning to afternoon for browsing
               </p>
             </div>
 

@@ -144,13 +144,23 @@ export default function Home() {
           <p className="text-xl md:text-2xl font-light drop-shadow-md mb-8">
             A sacred journey through the City of Light
           </p>
-          <a
-            href="#map"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 font-medium"
-          >
-            <Navigation className="w-5 h-5" />
-            Begin Your Journey
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+            <a
+              href="#map"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 font-medium"
+            >
+              <Navigation className="w-5 h-5" />
+              Begin Your Journey
+            </a>
+            <a
+              href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%20would%20like%20to%20book%20my%20stay."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-all duration-300 font-medium"
+            >
+              💬 Book Your Stay Now
+            </a>
+          </div>
         </div>
       </section>
 
@@ -300,7 +310,7 @@ export default function Home() {
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">1</div>
-                <a href="https://www.google.com/maps/place/Bharat+Silk+House/@25.2964593,82.9978566,15z" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
+                <a href="https://www.bharatsilkhouse.com" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
                   Bharat Silk House
                 </a>
               </div>
@@ -330,7 +340,7 @@ export default function Home() {
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">2</div>
-                <a href="https://www.google.com/maps/place/Jaikara+Silk+House/@25.3241386,83.0034562,15z" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
+                <a href="https://www.jaikarasilkhouse.com" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
                   Jaikara Silk House
                 </a>
               </div>

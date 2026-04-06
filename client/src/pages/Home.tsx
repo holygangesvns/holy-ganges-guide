@@ -173,8 +173,17 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg overflow-hidden shadow-lg border border-border">
-          <MapView onMapReady={handleMapReady} />
+        <div className="bg-white rounded-lg overflow-hidden shadow-lg border border-border flex justify-center">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.227675541198!2d82.99784629999999!3d25.296553599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e310fe5d7d86f%3A0x8ab392e74619cdcf!2sHoly%20Ganges%20Dorms!5e0!3m2!1sen!2sin!4v1775466761847!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style={{border: 0}} 
+            allowFullScreen
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full"
+          />
         </div>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">

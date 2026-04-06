@@ -300,7 +300,9 @@ export default function Home() {
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">1</div>
-                <h3 className="text-2xl font-semibold text-primary">Bharat Silk House</h3>
+                <a href="https://www.google.com/maps/place/Bharat+Silk+House/@25.2964593,82.9978566,15z" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
+                  Bharat Silk House
+                </a>
               </div>
               <p className="text-muted-foreground mb-4">
                 <strong>Location:</strong> Bhelupura, near Brahmakumari Vishwavidyalaya
@@ -311,19 +313,29 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mb-4">
                 Established in 1980, Bharat Silk House is renowned as one of Varanasi's finest Benarasi saree wholesalers. With a perfect 5.0 rating on Google and over 576 customer reviews, they offer authentic handwoven sarees at wholesale prices. The polite staff and fair pricing (no travel agents allowed) make it a trusted destination for genuine Benarasi silk.
               </p>
-              <p className="text-sm font-semibold text-primary">
+              <p className="text-sm font-semibold text-primary mb-6">
                 Best time: Morning to afternoon
               </p>
+              <div className="flex gap-3">
+                <a href="tel:+919453263046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  📞 Call
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=25.2964593,82.9978566" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  🗺️ Directions
+                </a>
+              </div>
             </div>
 
             {/* Shop 2 */}
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">2</div>
-                <h3 className="text-2xl font-semibold text-primary">Jaikara Silk House</h3>
+                <a href="https://www.google.com/maps/place/Jaikara+Silk+House/@25.3241386,83.0034562,15z" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
+                  Jaikara Silk House
+                </a>
               </div>
               <p className="text-muted-foreground mb-4">
-                <strong>Location:</strong> Central Varanasi
+                <strong>Location:</strong> Ramkatora Road, Central Varanasi
               </p>
               <p className="text-muted-foreground mb-4">
                 <strong>Specialty:</strong> Authentic Benarasi sarees and silk textiles
@@ -331,9 +343,17 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mb-4">
                 A trusted name in Varanasi's textile industry, Jaikara Silk House offers a wide selection of traditional Benarasi sarees with intricate zari work and authentic patterns. Known for quality craftsmanship and competitive pricing, it's an excellent destination for both retail and wholesale purchases of genuine handwoven silk.
               </p>
-              <p className="text-sm font-semibold text-primary">
+              <p className="text-sm font-semibold text-primary mb-6">
                 Best time: Morning to afternoon
               </p>
+              <div className="flex gap-3">
+                <a href="tel:+918604083953" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  📞 Call
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=25.3241386,83.0034562" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  🗺️ Directions
+                </a>
+              </div>
             </div>
           </div>
         </div>

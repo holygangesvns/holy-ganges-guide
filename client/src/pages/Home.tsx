@@ -269,33 +269,71 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-primary">Pappu Chai</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                <strong>Location:</strong> Near Marwari Sewa Sangh, Assi Ghat
+                <strong>Location:</strong> Assi Ghat
               </p>
               <p className="text-muted-foreground mb-4">
-                <strong>Specialty:</strong> Traditional chai (tea) and light snacks
+                <strong>Specialty:</strong> Traditional chai prepared the old-fashioned way
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                A local tea stall that serves authentic Indian chai prepared the traditional way. Perfect for a quiet moment while watching the river flow. The chai is strong, aromatic, and deeply satisfying.
+                A simple yet iconic tea stall where locals gather. Pappu Chai is known for its authentic preparation using traditional methods. The perfect companion to your ghat explorations, offering warmth and local connection.
               </p>
               <p className="text-sm font-semibold text-primary">
                 Best time: Early morning or evening
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-12 bg-white rounded-lg p-8 border border-border">
-            <div className="flex items-start gap-4">
-              <Utensils className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Pro Tips for Street Food</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Eat where locals eat—it's always fresh and authentic</li>
-                  <li>• Go early morning or late afternoon for the best quality</li>
-                  <li>• Carry small change; most stalls are cash-only</li>
-                  <li>• Don't hesitate to ask the vendor about ingredients</li>
-                  <li>• Start with small portions to explore different flavors</li>
-                </ul>
+      {/* Shopping Section - Treasures */}
+      <section id="shopping" className="section-divider bg-secondary/20 py-16 md:py-24">
+        <div className="container">
+          <div className="mb-12">
+            <h2 className="section-heading">Treasures of Varanasi</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              Discover authentic Varanasi craftsmanship. These trusted shops offer premium handwoven textiles and traditional Benarasi sarees at fair prices.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Shop 1 */}
+            <div className="timing-card fade-in">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="food-badge">1</div>
+                <h3 className="text-2xl font-semibold text-primary">Bharat Silk House</h3>
               </div>
+              <p className="text-muted-foreground mb-4">
+                <strong>Location:</strong> Bhelupura, near Brahmakumari Vishwavidyalaya
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <strong>Specialty:</strong> Premium Benarasi silk sarees and traditional handwoven textiles
+              </p>
+              <p className="text-sm text-muted-foreground mb-4">
+                Established in 1980, Bharat Silk House is renowned as one of Varanasi's finest Benarasi saree wholesalers. With a perfect 5.0 rating on Google and over 576 customer reviews, they offer authentic handwoven sarees at wholesale prices. The polite staff and fair pricing (no travel agents allowed) make it a trusted destination for genuine Benarasi silk.
+              </p>
+              <p className="text-sm font-semibold text-primary">
+                Best time: Morning to afternoon
+              </p>
+            </div>
+
+            {/* Shop 2 */}
+            <div className="timing-card fade-in">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="food-badge">2</div>
+                <h3 className="text-2xl font-semibold text-primary">Jaikara Silk House</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                <strong>Location:</strong> Central Varanasi
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <strong>Specialty:</strong> Authentic Benarasi sarees and silk textiles
+              </p>
+              <p className="text-sm text-muted-foreground mb-4">
+                A trusted name in Varanasi's textile industry, Jaikara Silk House offers a wide selection of traditional Benarasi sarees with intricate zari work and authentic patterns. Known for quality craftsmanship and competitive pricing, it's an excellent destination for both retail and wholesale purchases of genuine handwoven silk.
+              </p>
+              <p className="text-sm font-semibold text-primary">
+                Best time: Morning to afternoon
+              </p>
             </div>
           </div>
         </div>
@@ -509,60 +547,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Shopping Section - Treasures */}
-      <section id="shopping" className="section-divider bg-secondary/20 py-16 md:py-24">
-        <div className="container">
-          <div className="mb-12">
-            <h2 className="section-heading">Treasures of Varanasi</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl">
-              Discover authentic Varanasi craftsmanship. These trusted shops offer premium handwoven textiles and traditional Benarasi sarees at fair prices.
-            </p>
-          </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Shop 1 */}
-          <div className="timing-card fade-in">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="food-badge">1</div>
-              <h3 className="text-2xl font-semibold text-primary">Bharat Silk House</h3>
-            </div>
-            <p className="text-muted-foreground mb-4">
-              <strong>Location:</strong> Bhelupura, near Brahmakumari Vishwavidyalaya
-            </p>
-            <p className="text-muted-foreground mb-4">
-              <strong>Specialty:</strong> Premium Benarasi silk sarees and traditional handwoven textiles
-            </p>
-            <p className="text-sm text-muted-foreground mb-4">
-              Established in 1980, Bharat Silk House is renowned as one of Varanasi's finest Benarasi saree wholesalers. With a perfect 5.0 rating on Google and over 576 customer reviews, they offer authentic handwoven sarees at wholesale prices. The polite staff and fair pricing (no travel agents allowed) make it a trusted destination for genuine Benarasi silk.
-            </p>
-            <p className="text-sm font-semibold text-primary">
-              Best time: Morning to afternoon
-            </p>
-          </div>
-
-          {/* Shop 2 */}
-          <div className="timing-card fade-in">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="food-badge">2</div>
-              <h3 className="text-2xl font-semibold text-primary">Jaikara Silk House</h3>
-            </div>
-            <p className="text-muted-foreground mb-4">
-              <strong>Location:</strong> Central Varanasi
-            </p>
-            <p className="text-muted-foreground mb-4">
-              <strong>Specialty:</strong> Authentic Benarasi sarees and silk textiles
-            </p>
-            <p className="text-sm text-muted-foreground mb-4">
-              A trusted name in Varanasi's textile industry, Jaikara Silk House offers a wide selection of traditional Benarasi sarees with intricate zari work and authentic patterns. Known for quality craftsmanship and competitive pricing, it's an excellent destination for both retail and wholesale purchases of genuine handwoven silk.
-            </p>
-            <p className="text-sm font-semibold text-primary">
-              Best time: Morning to afternoon
-            </p>
-          </div>
-        </div>
         </div>
       </section>
 

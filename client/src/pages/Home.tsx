@@ -640,6 +640,158 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Guest Testimonials Section */}
+      <section className="section-divider bg-gradient-to-b from-saffron-50 to-white py-16 md:py-24">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <h2 className="section-heading">Guest Testimonials</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Hear from travelers who've experienced the magic of Holy Ganges Dorms and explored the wonders of Varanasi.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Testimonial 1 */}
+            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
+                  K
+                </div>
+                <div>
+                  <h4 className="font-semibold">Kirit</h4>
+                  <p className="text-sm text-muted-foreground">India</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+              </div>
+              <p className="text-muted-foreground italic">
+                "Host was wonderful, felt like family, a home away from home. The staff made me feel so welcome!"
+              </p>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
+                  P
+                </div>
+                <div>
+                  <h4 className="font-semibold">Prathap</h4>
+                  <p className="text-sm text-muted-foreground">India</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+              </div>
+              <p className="text-muted-foreground italic">
+                "We like the rooms and the owner was so good and helping. The beds and blankets are good and the bathrooms are also excellent."
+              </p>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
+                  P
+                </div>
+                <div>
+                  <h4 className="font-semibold">Patil</h4>
+                  <p className="text-sm text-muted-foreground">India</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+              </div>
+              <p className="text-muted-foreground italic">
+                "Definitely recommend this property to anyone visiting Kashi. Whether you're traveling solo or in a group, this is the perfect place to stay."
+              </p>
+            </div>
+
+            {/* Testimonial 4 */}
+            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
+                  V
+                </div>
+                <div>
+                  <h4 className="font-semibold">Vijay</h4>
+                  <p className="text-sm text-muted-foreground">India</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+              </div>
+              <p className="text-muted-foreground italic">
+                "The behaviour of the whole staff was excellent and specially the owner of the property was such a great hearted person. Highly recommended!"
+              </p>
+            </div>
+
+            {/* Testimonial 5 */}
+            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
+                  S
+                </div>
+                <div>
+                  <h4 className="font-semibold">Sophia</h4>
+                  <p className="text-sm text-muted-foreground">Germany</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+              </div>
+              <p className="text-muted-foreground italic">
+                "I came solo but didn't need to worry about anything. The staff took care of me like family. The location is perfect for exploring Varanasi!"
+              </p>
+            </div>
+
+            {/* Testimonial 6 */}
+            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
+                  R
+                </div>
+                <div>
+                  <h4 className="font-semibold">Rajesh</h4>
+                  <p className="text-sm text-muted-foreground">India</p>
+                </div>
+              </div>
+              <div className="flex gap-1 mb-3">
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+                <span className="text-yellow-400">★</span>
+              </div>
+              <p className="text-muted-foreground italic">
+                "Best budget accommodation for young travelers. The rooms and washrooms are super clean, beds comfortable, and the overall vibe very peaceful."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-white border-t border-border py-12">
         <div className="container">

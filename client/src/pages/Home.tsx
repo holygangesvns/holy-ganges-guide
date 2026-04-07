@@ -296,7 +296,7 @@ export default function Home() {
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">1</div>
-                <h3 className="text-2xl font-semibold text-primary">Pahalwan Lassi</h3>
+                <a href="https://www.google.com/maps/place/Pahalvan+Lassi+Bhandar/@25.3120239,82.9281936,14z/data=!4m10!1m2!2m1!1sPahalwan+Lassi+Bhandar+Varanasi!3m6!1s0x398e2d7934d5b9df:0x88448335801ef1f6!8m2!3d25.3120239!4d82.9642425!15sCh9QYWhhbHdhbiBMYXNzaSBCaGFuZGFyIFZhcmFuYXNpWiEiH3BhaGFsd2FuIGxhc3NpIGJoYW5kYXIgdmFyYW5hc2mSAQl0ZWFfc3RvcmWaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVPY1dGclpHcFhhazVDV1RKNFRrMUZOWFpTYldSWlZqRndTV0pZWXhBQuABAPoBBAgAECc!16s%2Fg%2F11rvgc5n4n" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">Pahalwan Lassi</a>
               </div>
               <p className="text-muted-foreground mb-4">
                 <strong>Location:</strong> Lanka Road, near Ravidass Gate
@@ -316,7 +316,7 @@ export default function Home() {
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">2</div>
-                <h3 className="text-2xl font-semibold text-primary">Shree Ji</h3>
+                <a href="https://www.google.com/maps/place/Shreeji+-+Sweets+%26+Milk/@25.31583,83.0157341,17z/data=!4m10!1m2!2m1!1sShree+Ji+Varanasi+25.315965+83.01631!3m6!1s0x398e2e22696a2263:0x7fc7332d063b361b!8m2!3d25.31583!4d83.0157341!15sCiRTaHJlZSBKaSBWYXJhbmFzaSAyNS4zMTU5NjUgODMuMDE2MzGSAQ5kZXNzZXJ0X2J1ZmZldOABAA!16s%2Fg%2F11c5rtpf33" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">Shree Ji</a>
               </div>
               <p className="text-muted-foreground mb-4">
                 <strong>Location:</strong> Near Dashashwamedh Ghat
@@ -336,7 +336,7 @@ export default function Home() {
             <div className="timing-card fade-in">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">3</div>
-                <h3 className="text-2xl font-semibold text-primary">Pappu Chai</h3>
+                <a href="https://www.google.com/maps/place/Pappu+Tea+Stall/@25.2898086,83.0044076,17z/data=!3m1!4b1!4m6!3m5!1s0x398e31edfe7f3189:0xd85ab1e0109ba23a!8m2!3d25.2898086!4d83.0044076!16s%2Fg%2F11b6dfrmxt" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">Pappu Chai</a>
               </div>
               <p className="text-muted-foreground mb-4">
                 <strong>Location:</strong> Assi Ghat

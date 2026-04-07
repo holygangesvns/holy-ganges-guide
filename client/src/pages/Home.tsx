@@ -117,6 +117,57 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
+        {/* OTA Links Section */}
+        <div className="bg-gray-50 border-b border-border">
+          <div className="container py-2 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-medium text-gray-700">Find us on</span>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.makemytrip.com/hotels/holy_ganges_vns-details-varanasi.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                  title="MakeMyTrip"
+                >
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/makemytrip-logo_db5b97a3.png"
+                    alt="MakeMyTrip"
+                    className="h-5 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://www.agoda.com/en-in/holy-ganges-dorms/hotel/varanasi-in.html?cid=1844104&ds=mdj5Iwhl6Tfi%2FCIB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                  title="Agoda"
+                >
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/agoda-logo_dd96ed5c.png"
+                    alt="Agoda"
+                    className="h-5 object-contain"
+                  />
+                </a>
+                <a
+                  href="https://www.booking.com/hotel/in/holy-ganges-dorms-varanasi.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                  title="Booking.com"
+                >
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/booking-logo_e90ccba9.png"
+                    alt="Booking.com"
+                    className="h-5 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Navigation */}
         <div className="container py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/1_a6b69119.jpg" alt="Holy Ganges Dorms" className="w-10 h-10 rounded-full object-cover" />

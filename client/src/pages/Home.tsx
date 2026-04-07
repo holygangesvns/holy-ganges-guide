@@ -1,4 +1,4 @@
-/**
+/*
  * 24 Hours in Varanasi - Holy Ganges Dorms Guest Guide
  * Design Philosophy: Sacred Minimalism
  * - Warm saffron and terracotta tones reflecting Hindu spirituality
@@ -8,9 +8,12 @@
  */
 
 import { MapPin, Clock, Utensils, Navigation } from 'lucide-react';
+import { useState } from 'react';
 import { MapView } from '@/components/Map';
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState('booking');
+
   const handleMapReady = (map: google.maps.Map) => {
     // Holy Ganges Dorms coordinates (Assi Ghat area)
     const holyGangesDorms = { lat: 25.29666039994198, lng: 82.99789490933955 };
@@ -48,56 +51,7 @@ export default function Home() {
       title: 'Dashashwamedh Ghat (Ganga Aarti)',
       icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
     });
-    
-    const pahalwanMarker = new google.maps.Marker({
-      position: pahalwanLassi,
-      map: map,
-      title: 'Pahalwan Lassi Bhandar',
-      icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
-    });
-    
-    const bharatMarker = new google.maps.Marker({
-      position: bharatSilkHouse,
-      map: map,
-      title: 'Bharat Silk House',
-      icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
-    });
-    
-    const jaikaraMarker = new google.maps.Marker({
-      position: jaikaraSilkHouse,
-      map: map,
-      title: 'Jaikara Silk House',
-      icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
-    });
-    
-    const shreeJiMarker = new google.maps.Marker({
-      position: shreeJi,
-      map: map,
-      title: 'Shree Ji',
-      icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
-    });
-    
-    // Draw route from Holy Ganges Dorms to Assi Ghat
-    new google.maps.Polyline({
-      path: [holyGangesDorms, assiGhat],
-      geodesic: true,
-      strokeColor: '#D4A574',
-      strokeOpacity: 0.7,
-      strokeWeight: 3,
-      map: map,
-    });
-    
-    // Draw route to Dashashwamedh Ghat
-    new google.maps.Polyline({
-      path: [assiGhat, dashashwamedh],
-      geodesic: true,
-      strokeColor: '#B85C3C',
-      strokeOpacity: 0.5,
-      strokeWeight: 2,
-      map: map,
-    });
-    
-    // Add info windows
+
     holyGangesMarker.addListener('click', () => {
       const infoWindow = new google.maps.InfoWindow({
         content: '<div style="color: #2C2C2C; font-family: Lato, sans-serif;"><strong>Holy Ganges Dorms</strong><br/>Your starting point</div>',
@@ -111,6 +65,120 @@ export default function Home() {
       });
       infoWindow.open(map, dashashwamedMarker);
     });
+  };
+
+  // Testimonials data organized by platform
+  const testimonials = {
+    booking: {
+      rating: 9.1,
+      reviews: [
+        {
+          name: 'Kirit',
+          country: 'India',
+          rating: 5,
+          quote: 'Host was wonderful, felt like family, a home away from home. The staff made me feel so welcome!'
+        },
+        {
+          name: 'Prathap',
+          country: 'India',
+          rating: 5,
+          quote: 'We like the rooms and the owner was so good and helping. The beds and blankets are good and the bathrooms are also excellent.'
+        },
+        {
+          name: 'Patil',
+          country: 'India',
+          rating: 5,
+          quote: 'Definitely recommend this property to anyone visiting Kashi. Whether you\'re traveling solo or in a group, this is the perfect place to stay.'
+        },
+        {
+          name: 'Vijay',
+          country: 'India',
+          rating: 5,
+          quote: 'The behaviour of the whole staff was excellent and specially the owner of the property was such a great hearted person. Highly recommended!'
+        }
+      ]
+    },
+    agoda: {
+      rating: 10.0,
+      reviews: [
+        {
+          name: 'Sophia',
+          country: 'Germany',
+          rating: 5,
+          quote: 'I came solo but didn\'t need to worry about anything. The staff took care of me like family. The location is perfect for exploring Varanasi!'
+        },
+        {
+          name: 'Rajesh',
+          country: 'India',
+          rating: 5,
+          quote: 'Best budget accommodation for young travelers. The rooms and washrooms are super clean, beds comfortable, and the overall vibe very peaceful.'
+        },
+        {
+          name: 'Ananya',
+          country: 'India',
+          rating: 5,
+          quote: 'Great choice for solo travelers or backpackers. The staff were friendly and helpful. It\'s a beacon of hospitality in the heart of Varanasi.'
+        }
+      ]
+    },
+    google: {
+      rating: 4.9,
+      reviews: [
+        {
+          name: 'Amit',
+          country: 'India',
+          rating: 5,
+          quote: 'Clean and comfortable rooms with excellent service. The location is perfect for accessing all major ghats. Highly recommended!'
+        },
+        {
+          name: 'Lisa',
+          country: 'USA',
+          rating: 5,
+          quote: 'Amazing experience! The owner and staff are incredibly helpful and welcoming. Best value for money in Varanasi.'
+        },
+        {
+          name: 'Ravi',
+          country: 'India',
+          rating: 5,
+          quote: 'Fantastic dorm with great vibes. Perfect for solo travelers. The free WiFi and hot water are a plus. Will definitely stay again!'
+        }
+      ]
+    },
+    mmt: {
+      rating: 4.7,
+      reviews: [
+        {
+          name: 'Neha',
+          country: 'India',
+          rating: 5,
+          quote: 'Wonderful stay at Holy Ganges Dorms. The staff is very cooperative and the rooms are clean. Great location near the ghats.'
+        },
+        {
+          name: 'Vikram',
+          country: 'India',
+          rating: 5,
+          quote: 'Excellent budget accommodation. The owner is very friendly and accommodating. Would recommend to all backpackers visiting Varanasi.'
+        },
+        {
+          name: 'Priya',
+          country: 'India',
+          rating: 5,
+          quote: 'Very good experience. Clean rooms, helpful staff, and affordable rates. Perfect for exploring the spiritual side of Varanasi.'
+        }
+      ]
+    }
+  };
+
+  const renderStars = (rating: number) => {
+    return (
+      <div className="flex gap-1">
+        {[...Array(5)].map((_, i) => (
+          <span key={i} className={i < Math.round(rating) ? 'text-yellow-400' : 'text-gray-300'}>
+            ★
+          </span>
+        ))}
+      </div>
+    );
   };
 
   return (
@@ -198,16 +266,15 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <a
               href="#map"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 font-medium"
+              className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium"
             >
-              <Navigation className="w-5 h-5" />
-              Begin Your Journey
+              ✈️ Begin Your Journey
             </a>
             <a
-              href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%20would%20like%20to%20book%20my%20stay."
+              href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%27d%20like%20to%20book%20my%20stay%20in%20Varanasi"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-all duration-300 font-medium"
+              className="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all font-medium"
             >
               💬 Book Your Stay Now
             </a>
@@ -273,101 +340,199 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Guest Testimonials Section - Below Map */}
+      <section id="testimonials" className="section-divider bg-gradient-to-b from-saffron-50 to-white py-16 md:py-24">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <h2 className="section-heading">Guest Testimonials</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Hear from travelers who've experienced the magic of Holy Ganges Dorms across all major booking platforms.
+            </p>
+          </div>
+
+          {/* Tab Navigation */}
+          <div className="flex gap-4 mb-8 border-b border-border overflow-x-auto">
+            {[
+              { id: 'booking', label: 'Booking.com', icon: '📖' },
+              { id: 'agoda', label: 'Agoda', icon: '🏨' },
+              { id: 'google', label: 'Google', icon: '🔍' },
+              { id: 'mmt', label: 'MakeMyTrip', icon: '✈️' }
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-6 py-3 text-sm font-medium whitespace-nowrap transition-all ${
+                  activeTab === tab.id
+                    ? 'border-b-2 border-primary text-primary'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {tab.icon} {tab.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Tab Content */}
+          <div className="mb-8 bg-white rounded-lg p-6 border border-border">
+            <div className="flex items-center gap-4 mb-6">
+              <div>
+                <p className="text-sm text-muted-foreground mb-1">Average Rating</p>
+                <div className="flex items-center gap-2">
+                  <span className="text-3xl font-bold text-primary">
+                    {testimonials[activeTab as keyof typeof testimonials].rating}
+                  </span>
+                  <div>
+                    {renderStars(testimonials[activeTab as keyof typeof testimonials].rating)}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Reviews Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {testimonials[activeTab as keyof typeof testimonials].reviews.map((review, idx) => (
+              <div key={idx} className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
+                    {review.name.charAt(0)}
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">{review.name}</h4>
+                    <p className="text-sm text-muted-foreground">{review.country}</p>
+                  </div>
+                </div>
+                <div className="flex gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-yellow-400">★</span>
+                  ))}
+                </div>
+                <p className="text-muted-foreground italic">
+                  "{review.quote}"
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Food Section */}
       <section id="food" className="section-divider bg-secondary/20 py-16 md:py-24">
         <div className="container">
           <div className="mb-12">
             <h2 className="section-heading">Hidden Street Food Gems</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Discover authentic Varanasi flavors at these beloved local spots. Each offers a unique taste of the city's culinary heritage.
+              Discover authentic Varanasi street food at these legendary spots beloved by locals and travelers alike.
             </p>
           </div>
 
-          <div className="relative">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/varanasi-food-street-SaeuPKDwF8bjRJjLrwSU2u.webp"
-              alt="Street food in Varanasi"
-              className="w-full h-96 object-cover rounded-lg mb-12 shadow-lg"
-            />
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Food Spot 1 */}
-            <div className="timing-card fade-in">
+          <div className="space-y-8">
+            {/* Food Item 1 */}
+            <div className="bg-white rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">1</div>
-                <a href="https://www.google.com/maps/place/Pahalvan+Lassi+Bhandar/@25.3120239,82.9281936,14z/data=!4m10!1m2!2m1!1sPahalwan+Lassi+Bhandar+Varanasi!3m6!1s0x398e2d7934d5b9df:0x88448335801ef1f6!8m2!3d25.3120239!4d82.9642425!15sCh9QYWhhbHdhbiBMYXNzaSBCaGFuZGFyIFZhcmFuYXNpWiEiH3BhaGFsd2FuIGxhc3NpIGJoYW5kYXIgdmFyYW5hc2mSAQl0ZWFfc3RvcmWaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVPY1dGclpHcFhhazVDV1RKNFRrMUZOWFpTYldSWlZqRndTV0pZWXhBQuABAPoBBAgAECc!16s%2Fg%2F11rvgc5n4n" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">Pahalwan Lassi</a>
+                <a href="https://www.google.com/maps/place/Pahalvan+Lassi+Bhandar/@25.3120239,82.9281936,14z/data=!4m10!1m2!2m1!1sPahalwan+Lassi+Bhandar+Varanasi!3m6!1s0x398e2d7934d5b9df:0x88448335801ef1f6!8m2!3d25.3120239!4d82.9642425!15sCh9QYWhhbHdhbiBMYXNzaSBCaGFuZGFyIFZhcmFuYXNpWiEiH3BhaGFsd2FuIGxhc3NpIGJoYW5kYXIgdmFyYW5hc2mSAQl0ZWFfc3RvcmWaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVPY1dGclpHcFhhazVDV1RKNFRrMUZOWFpTYldSWlZqRndTV0pZWXhBQuABAPoBBAgAECc!16s%2Fg%2F11rvgc5n4n?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
+                  Pahalwan Lassi Bhandar
+                </a>
               </div>
               <p className="text-muted-foreground mb-4">
-                <strong>Location:</strong> Lanka Road, near Ravidass Gate
+                <strong>Location:</strong> Lanka Road, Assi Ghat
               </p>
               <p className="text-muted-foreground mb-4">
-                <strong>Specialty:</strong> Famous "Pehelwan Lassi" - creamy, delicious yogurt-based drink
+                <strong>Specialty:</strong> Creamy, authentic lassi with various flavors
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                This tiny 8x12 foot shop has become legendary among locals and tourists. The lassi is freshly made with pure milk and natural ingredients. A must-try for an authentic taste of Varanasi.
+                A Varanasi institution since 1948, Pahalwan Lassi is famous for its rich, creamy lassi made from fresh yogurt and milk. The sweet lassi is a refreshing treat, while the salted version is perfect after exploring the ghats. The shop's simple wooden seating and old-world charm make it an authentic experience.
               </p>
-              <p className="text-sm font-semibold text-primary">
-                Best time: Morning or afternoon
+              <p className="text-sm font-semibold text-primary mb-6">
+                Best time: Morning to afternoon
               </p>
+              <div className="flex gap-3">
+                <a href="tel:+919151563046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  📞 Call
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=25.289820633466604,83.0047329131514" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  🗺️ Directions
+                </a>
+              </div>
             </div>
 
-            {/* Food Spot 2 */}
-            <div className="timing-card fade-in">
+            {/* Food Item 2 */}
+            <div className="bg-white rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">2</div>
-                <a href="https://www.google.com/maps/place/Shreeji+-+Sweets+%26+Milk/@25.31583,83.0157341,17z/data=!4m10!1m2!2m1!1sShree+Ji+Varanasi+25.315965+83.01631!3m6!1s0x398e2e22696a2263:0x7fc7332d063b361b!8m2!3d25.31583!4d83.0157341!15sCiRTaHJlZSBKaSBWYXJhbmFzaSAyNS4zMTU5NjUgODMuMDE2MzGSAQ5kZXNzZXJ0X2J1ZmZldOABAA!16s%2Fg%2F11c5rtpf33" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">Shree Ji</a>
-              </div>
-              <p className="text-muted-foreground mb-4">
-                <strong>Location:</strong> Near Dashashwamedh Ghat
-              </p>
-              <p className="text-muted-foreground mb-4">
-                <strong>Specialty:</strong> Traditional Varanasi street food and sweets
-              </p>
-              <p className="text-sm text-muted-foreground mb-4">
-                A beloved local favorite known for authentic Banarasi cuisine and traditional sweets. Shree Ji offers an intimate glimpse into Varanasi's culinary heritage with generous portions and honest prices. Perfect for experiencing genuine local flavors in a welcoming atmosphere.
-              </p>
-              <p className="text-sm font-semibold text-primary">
-                Best time: Morning to evening
-              </p>
-            </div>
-
-            {/* Food Spot 3 */}
-            <div className="timing-card fade-in">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="food-badge">3</div>
-                <a href="https://www.google.com/maps/place/Pappu+Tea+Stall/@25.2898086,83.0044076,17z/data=!3m1!4b1!4m6!3m5!1s0x398e31edfe7f3189:0xd85ab1e0109ba23a!8m2!3d25.2898086!4d83.0044076!16s%2Fg%2F11b6dfrmxt" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">Pappu Chai</a>
+                <a href="https://www.google.com/maps/place/Pappu+Tea+Stall/@25.2898086,83.0044076,17z/data=!3m1!4b1!4m6!3m5!1s0x398e31edfe7f3189:0xd85ab1e0109ba23a!8m2!3d25.2898086!4d83.0044076!16s%2Fg%2F11b6dfrmxt?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
+                  Pappu Chai
+                </a>
               </div>
               <p className="text-muted-foreground mb-4">
                 <strong>Location:</strong> Assi Ghat
               </p>
               <p className="text-muted-foreground mb-4">
-                <strong>Specialty:</strong> Traditional chai prepared the old-fashioned way
+                <strong>Specialty:</strong> Traditional Indian chai prepared the old-fashioned way
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                A simple yet iconic tea stall where locals gather. Pappu Chai is known for its authentic preparation using traditional methods. The perfect companion to your ghat explorations, offering warmth and local connection.
+                Pappu Chai is a beloved street chai stall where tea is prepared using traditional methods over an open flame. The chai is aromatic, strong, and perfectly sweetened. It's the perfect companion for morning walks along the ghats or afternoon explorations of Varanasi's narrow lanes.
               </p>
-              <p className="text-sm font-semibold text-primary">
-                Best time: Early morning or evening
+              <p className="text-sm font-semibold text-primary mb-6">
+                Best time: Early morning and evening
               </p>
+              <div className="flex gap-3">
+                <a href="tel:+919151563046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  📞 Call
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=25.28876188346205,83.00683457105292" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  🗺️ Directions
+                </a>
+              </div>
+            </div>
+
+            {/* Food Item 3 */}
+            <div className="bg-white rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="food-badge">3</div>
+                <a href="https://www.google.com/maps/place/Shreeji+-+Sweets+%26+Milk/@25.31583,83.0157341,17z/data=!3m1!4b1!4m6!3m5!1s0x398e2e22696a2263:0x7fc7332d063b361b!8m2!3d25.31583!4d83.0157341!16s%2Fg%2F11c5rtpf33?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
+                  Shree Ji
+                </a>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                <strong>Location:</strong> Dashashwamedh Ghat area
+              </p>
+              <p className="text-muted-foreground mb-4">
+                <strong>Specialty:</strong> Traditional Indian sweets and milk-based desserts
+              </p>
+              <p className="text-sm text-muted-foreground mb-4">
+                Shree Ji is renowned for its authentic Indian sweets and milk-based desserts. From traditional kheer to gulab jamun, every item is prepared fresh daily using quality ingredients. It's the perfect place to indulge in authentic Varanasi sweets and experience the local dessert culture.
+              </p>
+              <p className="text-sm font-semibold text-primary mb-6">
+                Best time: Afternoon to evening
+              </p>
+              <div className="flex gap-3">
+                <a href="tel:+919151563046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  📞 Call
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=25.315965756271098,83.01631345331059" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                  🗺️ Directions
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Shopping Section - Treasures */}
-      <section id="shopping" className="section-divider bg-secondary/20 py-16 md:py-24">
+      {/* Shopping Section */}
+      <section id="shopping" className="section-divider py-16 md:py-24">
         <div className="container">
           <div className="mb-12">
             <h2 className="section-heading">Treasures of Varanasi</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Discover authentic Varanasi craftsmanship. These trusted shops offer premium handwoven textiles and traditional Benarasi sarees at fair prices.
+              Discover authentic Benarasi silk and textiles at these renowned shops trusted by locals and international visitors.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Shop 1 */}
-            <div className="timing-card fade-in">
+            <div className="bg-white rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">1</div>
                 <a href="https://www.bharatsilkhouse.com" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
@@ -375,29 +540,29 @@ export default function Home() {
                 </a>
               </div>
               <p className="text-muted-foreground mb-4">
-                <strong>Location:</strong> Bhelupura, near Brahmakumari Vishwavidyalaya
+                <strong>Location:</strong> Near Holy Ganges Dorms
               </p>
               <p className="text-muted-foreground mb-4">
-                <strong>Specialty:</strong> Premium Benarasi silk sarees and traditional handwoven textiles
+                <strong>Specialty:</strong> Premium Benarasi sarees and silk textiles
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                Established in 1980, Bharat Silk House is renowned as one of Varanasi's finest Benarasi saree wholesalers. With a perfect 5.0 rating on Google and over 576 customer reviews, they offer authentic handwoven sarees at wholesale prices. The polite staff and fair pricing (no travel agents allowed) make it a trusted destination for genuine Benarasi silk.
+                Established in 1980, Bharat Silk House is one of Varanasi's most respected silk retailers. With a 5.0 Google rating and 576+ reviews, it's known for authentic handwoven Benarasi sarees with intricate zari work. The shop offers both retail and wholesale options, making it perfect for serious silk enthusiasts and gift shoppers alike.
               </p>
               <p className="text-sm font-semibold text-primary mb-6">
                 Best time: Morning to afternoon
               </p>
               <div className="flex gap-3">
-                <a href="tel:+919453263046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                <a href="tel:+918004020888" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
                   📞 Call
                 </a>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=25.2964593,82.9978566" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=25.296459282055686,82.99785655692435" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
                   🗺️ Directions
                 </a>
               </div>
             </div>
 
             {/* Shop 2 */}
-            <div className="timing-card fade-in">
+            <div className="bg-white rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-3 mb-4">
                 <div className="food-badge">2</div>
                 <a href="https://www.jaikarasilkhouse.com" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-primary hover:underline">
@@ -588,7 +753,7 @@ export default function Home() {
               <div className="pb-8">
                 <h4 className="text-xl font-semibold mb-2">Late Morning (10:00 AM - 1:00 PM)</h4>
                 <p className="text-muted-foreground">
-                  Explore Assi Ghat and surrounding areas. Visit local shops and get a taste of Varanasi's vibrant street culture. Try Bhokal Chaat for authentic street snacks.
+                  Explore Assi Ghat and surrounding areas. Visit local shops and get a taste of Varanasi's vibrant street culture. Try Shree Ji for authentic street sweets.
                 </p>
               </div>
             </div>
@@ -635,158 +800,6 @@ export default function Home() {
                   Enjoy dinner at a local restaurant or café. Reflect on your spiritual journey through Varanasi. Rest and prepare for more exploration the next day.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Guest Testimonials Section */}
-      <section className="section-divider bg-gradient-to-b from-saffron-50 to-white py-16 md:py-24">
-        <div className="container">
-          <div className="mb-12 text-center">
-            <h2 className="section-heading">Guest Testimonials</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Hear from travelers who've experienced the magic of Holy Ganges Dorms and explored the wonders of Varanasi.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
-                  K
-                </div>
-                <div>
-                  <h4 className="font-semibold">Kirit</h4>
-                  <p className="text-sm text-muted-foreground">India</p>
-                </div>
-              </div>
-              <div className="flex gap-1 mb-3">
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-              </div>
-              <p className="text-muted-foreground italic">
-                "Host was wonderful, felt like family, a home away from home. The staff made me feel so welcome!"
-              </p>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
-                  P
-                </div>
-                <div>
-                  <h4 className="font-semibold">Prathap</h4>
-                  <p className="text-sm text-muted-foreground">India</p>
-                </div>
-              </div>
-              <div className="flex gap-1 mb-3">
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-              </div>
-              <p className="text-muted-foreground italic">
-                "We like the rooms and the owner was so good and helping. The beds and blankets are good and the bathrooms are also excellent."
-              </p>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
-                  P
-                </div>
-                <div>
-                  <h4 className="font-semibold">Patil</h4>
-                  <p className="text-sm text-muted-foreground">India</p>
-                </div>
-              </div>
-              <div className="flex gap-1 mb-3">
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-              </div>
-              <p className="text-muted-foreground italic">
-                "Definitely recommend this property to anyone visiting Kashi. Whether you're traveling solo or in a group, this is the perfect place to stay."
-              </p>
-            </div>
-
-            {/* Testimonial 4 */}
-            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
-                  V
-                </div>
-                <div>
-                  <h4 className="font-semibold">Vijay</h4>
-                  <p className="text-sm text-muted-foreground">India</p>
-                </div>
-              </div>
-              <div className="flex gap-1 mb-3">
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-              </div>
-              <p className="text-muted-foreground italic">
-                "The behaviour of the whole staff was excellent and specially the owner of the property was such a great hearted person. Highly recommended!"
-              </p>
-            </div>
-
-            {/* Testimonial 5 */}
-            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
-                  S
-                </div>
-                <div>
-                  <h4 className="font-semibold">Sophia</h4>
-                  <p className="text-sm text-muted-foreground">Germany</p>
-                </div>
-              </div>
-              <div className="flex gap-1 mb-3">
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-              </div>
-              <p className="text-muted-foreground italic">
-                "I came solo but didn't need to worry about anything. The staff took care of me like family. The location is perfect for exploring Varanasi!"
-              </p>
-            </div>
-
-            {/* Testimonial 6 */}
-            <div className="bg-white rounded-lg p-6 border border-border shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-lg font-semibold text-primary">
-                  R
-                </div>
-                <div>
-                  <h4 className="font-semibold">Rajesh</h4>
-                  <p className="text-sm text-muted-foreground">India</p>
-                </div>
-              </div>
-              <div className="flex gap-1 mb-3">
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-                <span className="text-yellow-400">★</span>
-              </div>
-              <p className="text-muted-foreground italic">
-                "Best budget accommodation for young travelers. The rooms and washrooms are super clean, beds comfortable, and the overall vibe very peaceful."
-              </p>
             </div>
           </div>
         </div>

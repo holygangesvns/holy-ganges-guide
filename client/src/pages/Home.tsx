@@ -187,12 +187,22 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
         {/* Main Navigation */}
         <div className="container py-4 flex items-center justify-between">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/1_a6b69119.jpg" alt="Holy Ganges Dorms" className="w-10 h-10 rounded-full object-cover" />
+            <h1 className="text-lg font-semibold text-primary">Holy Ganges Dorms</h1>
+          </div>
+          <nav className="hidden md:flex gap-8">
+            <a href="#map" className="text-sm hover:text-primary transition-colors">Walking Map</a>
+            <a href="#food" className="text-sm hover:text-primary transition-colors">Street Food</a>
+            <a href="#shopping" className="text-sm hover:text-primary transition-colors">Treasures</a>
+            <a href="#aarti" className="text-sm hover:text-primary transition-colors">Aarti</a>
+          </nav>
+        </div>
+
+        {/* OTA Links Section */}
+        <div className="bg-gray-50 border-t border-border">
+          <div className="container py-3 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/1_a6b69119.jpg" alt="Holy Ganges Dorms" className="w-10 h-10 rounded-full object-cover" />
-              <h1 className="text-lg font-semibold text-primary">Holy Ganges Dorms</h1>
-            </div>
-            <div className="flex items-center gap-3 pl-6 border-l border-border">
               <span className="text-sm font-medium text-gray-700">Find us on</span>
               <div className="flex items-center gap-4">
                 <a
@@ -237,12 +247,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <nav className="hidden md:flex gap-8">
-            <a href="#map" className="text-sm hover:text-primary transition-colors">Walking Map</a>
-            <a href="#food" className="text-sm hover:text-primary transition-colors">Street Food</a>
-            <a href="#shopping" className="text-sm hover:text-primary transition-colors">Treasures</a>
-            <a href="#aarti" className="text-sm hover:text-primary transition-colors">Aarti</a>
-          </nav>
         </div>
       </header>
 

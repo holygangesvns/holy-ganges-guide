@@ -201,10 +201,10 @@ export default function Home() {
 
         {/* OTA Links Section */}
         <div className="bg-gray-50 border-t border-border">
-          <div className="container py-3 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <span className="text-sm font-medium text-gray-700">Find us on</span>
-              <div className="flex items-center gap-4">
+          <div className="container py-6 flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center gap-4">
+              <span className="text-lg font-semibold text-gray-800">Find us on</span>
+              <div className="flex items-center gap-8">
                 <a
                   href="https://www.makemytrip.com/hotels/holy_ganges_vns-details-varanasi.html"
                   target="_blank"
@@ -215,7 +215,7 @@ export default function Home() {
                   <img
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/makemytrip-logo_db5b97a3.png"
                     alt="MakeMyTrip"
-                    className="h-6 object-contain"
+                    className="h-8 object-contain"
                   />
                 </a>
                 <a
@@ -228,7 +228,7 @@ export default function Home() {
                   <img
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/agoda-logo_dd96ed5c.png"
                     alt="Agoda"
-                    className="h-6 object-contain"
+                    className="h-8 object-contain"
                   />
                 </a>
                 <a
@@ -241,7 +241,7 @@ export default function Home() {
                   <img
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/booking-logo_e90ccba9.png"
                     alt="Booking.com"
-                    className="h-6 object-contain"
+                    className="h-8 object-contain"
                   />
                 </a>
               </div>
@@ -447,14 +447,6 @@ export default function Home() {
               <p className="text-sm font-semibold text-primary mb-6">
                 Best time: Morning to afternoon
               </p>
-              <div className="flex gap-3">
-                <a href="tel:+919151563046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
-                  📞 Call
-                </a>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=25.289820633466604,83.0047329131514" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
-                  🗺️ Directions
-                </a>
-              </div>
             </div>
 
             {/* Food Item 2 */}
@@ -477,14 +469,6 @@ export default function Home() {
               <p className="text-sm font-semibold text-primary mb-6">
                 Best time: Early morning and evening
               </p>
-              <div className="flex gap-3">
-                <a href="tel:+919151563046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
-                  📞 Call
-                </a>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=25.28876188346205,83.00683457105292" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
-                  🗺️ Directions
-                </a>
-              </div>
             </div>
 
             {/* Food Item 3 */}
@@ -507,14 +491,6 @@ export default function Home() {
               <p className="text-sm font-semibold text-primary mb-6">
                 Best time: Afternoon to evening
               </p>
-              <div className="flex gap-3">
-                <a href="tel:+919151563046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
-                  📞 Call
-                </a>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=25.315965756271098,83.01631345331059" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
-                  🗺️ Directions
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -552,7 +528,7 @@ export default function Home() {
                 Best time: Morning to afternoon
               </p>
               <div className="flex gap-3">
-                <a href="tel:+918004020888" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
+                <a href="tel:+919453263046" className="flex-1 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">
                   📞 Call
                 </a>
                 <a href="https://www.google.com/maps/dir/?api=1&destination=25.296459282055686,82.99785655692435" target="_blank" rel="noopener noreferrer" className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg text-center text-sm font-medium hover:bg-opacity-90 transition-all">

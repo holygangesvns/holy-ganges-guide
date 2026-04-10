@@ -843,7 +843,7 @@ export default function Home() {
           href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20your%20property."
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all hover:scale-110 flex items-center justify-center"
+          className="whatsapp-widget-enter fixed bottom-1/3 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all hover:scale-110 flex items-center justify-center"
           title="Chat on WhatsApp"
         >
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

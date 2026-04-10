@@ -13,6 +13,21 @@ import { MapView } from '@/components/Map';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('booking');
+  const [showWhatsAppWidget, setShowWhatsAppWidget] = useState(false);
+
+  // Detect scroll to show WhatsApp widget after hero section
+  const handleScroll = () => {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      const heroBottom = heroSection.getBoundingClientRect().bottom;
+      setShowWhatsAppWidget(heroBottom < 0);
+    }
+  };
+
+  // Add scroll listener
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', handleScroll);
+  }
 
   const handleMapReady = (map: google.maps.Map) => {
     // Holy Ganges Dorms coordinates (Assi Ghat area)
@@ -201,57 +216,55 @@ export default function Home() {
 
         {/* OTA Links Section */}
         <div className="bg-gray-50 border-t border-border">
-          <div className="container py-6 flex flex-col items-center justify-center">
-            <div className="flex flex-col items-center gap-4">
-              <span className="text-lg font-semibold text-gray-800">Find us on</span>
-              <div className="flex items-center gap-8">
-                <a
-                  href="https://www.makemytrip.com/hotels/holy_ganges_vns-details-varanasi.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
-                  title="MakeMyTrip"
-                >
-                  <img
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/makemytrip-logo_db5b97a3.png"
-                    alt="MakeMyTrip"
-                    className="h-8 object-contain"
-                  />
-                </a>
-                <a
-                  href="https://www.agoda.com/en-in/holy-ganges-dorms/hotel/varanasi-in.html?cid=1844104&ds=mdj5Iwhl6Tfi%2FCIB"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
-                  title="Agoda"
-                >
-                  <img
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/agoda-logo_dd96ed5c.png"
-                    alt="Agoda"
-                    className="h-8 object-contain"
-                  />
-                </a>
-                <a
-                  href="https://www.booking.com/hotel/in/holy-ganges-dorms-varanasi.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
-                  title="Booking.com"
-                >
-                  <img
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/booking-logo_e90ccba9.png"
-                    alt="Booking.com"
-                    className="h-8 object-contain"
-                  />
-                </a>
-              </div>
+          <div className="container py-4 flex items-center justify-center gap-6">
+            <span className="text-lg font-semibold text-gray-800">Find us on</span>
+            <div className="flex items-center gap-6">
+              <a
+                href="https://www.makemytrip.com/hotels/holy_ganges_vns-details-varanasi.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                title="MakeMyTrip"
+              >
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/makemytrip-logo_db5b97a3.png"
+                  alt="MakeMyTrip"
+                  className="h-10 w-10 object-contain rounded-full bg-white p-1"
+                />
+              </a>
+              <a
+                href="https://www.agoda.com/en-in/holy-ganges-dorms/hotel/varanasi-in.html?cid=1844104&ds=mdj5Iwhl6Tfi%2FCIB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                title="Agoda"
+              >
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/agoda-logo_dd96ed5c.png"
+                  alt="Agoda"
+                  className="h-10 w-10 object-contain rounded-full bg-white p-1"
+                />
+              </a>
+              <a
+                href="https://www.booking.com/hotel/in/holy-ganges-dorms-varanasi.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                title="Booking.com"
+              >
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494200766/YLJAWcDwTjxGtMfK4DYocy/booking-logo_e90ccba9.png"
+                  alt="Booking.com"
+                  className="h-10 w-10 object-contain rounded-full bg-white p-1"
+                />
+              </a>
             </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="hero-section relative h-screen flex items-center justify-center overflow-hidden">
         <img
           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/varanasi-hero-ganges-MfaFdsg4CvjcKKXqUvdhnr.webp"
           alt="Ganges River at sunrise"
@@ -823,6 +836,21 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Widget */}
+      {showWhatsAppWidget && (
+        <a
+          href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20your%20property."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all hover:scale-110 flex items-center justify-center"
+          title="Chat on WhatsApp"
+        >
+          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.99 1.514A9.9 9.9 0 005.064 9.75a9.864 9.864 0 001.44 19.052h.004c2.925 0 5.674-1.125 7.757-2.996l.015.011a9.858 9.858 0 006.552-9.676c0-5.355-4.369-9.704-9.756-9.704z"/>
+          </svg>
+        </a>
+      )}
     </div>
   );
 }

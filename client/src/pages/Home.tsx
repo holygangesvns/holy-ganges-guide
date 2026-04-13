@@ -990,9 +990,9 @@ export default function Home() {
           title="View What to Pack Guide"
         >
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/backpack_mirrored_4b3003c4.png"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/backpack_circular_681d3281.png"
             alt="Backpack"
-            className="w-12 h-12"
+            className="w-12 h-12 rounded-full"
           />
         </a>
       )}

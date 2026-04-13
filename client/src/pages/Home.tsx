@@ -927,7 +927,7 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Holy Ganges Dorms</h4>
               <p className="text-sm text-muted-foreground">
-                Your gateway to authentic Varanasi experiences
+                A sacred sanctuary for travelers seeking authentic Varanasi. Nestled near the spiritual heart of the Ghats, we offer clean, comfortable rooms and warm hospitality. Perfect for solo travelers, backpackers, and spiritual seekers exploring the City of Light.
               </p>
             </div>
             <div>
@@ -977,6 +977,22 @@ export default function Home() {
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/pasted_file_bpQRYT_image_4ae0fbc6.png"
             alt="WhatsApp"
             className="w-12 h-12 rounded-full"
+          />
+        </a>
+      )}
+
+      {/* Floating Backpack Button */}
+      {showWhatsAppWidget && (
+        <a
+          href="#packing"
+          className="whatsapp-widget-enter fixed right-6 z-50 rounded-full shadow-lg transition-all hover:scale-110 flex items-center justify-center"
+          style={{ bottom: 'calc(33.333% - 80px)' }}
+          title="View What to Pack Guide"
+        >
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/backpack_mirrored_4b3003c4.png"
+            alt="Backpack"
+            className="w-12 h-12"
           />
         </a>
       )}

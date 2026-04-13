@@ -211,6 +211,7 @@ export default function Home() {
             <a href="#food" className="text-sm hover:text-primary transition-colors">Street Food</a>
             <a href="#shopping" className="text-sm hover:text-primary transition-colors">Treasures</a>
             <a href="#aarti" className="text-sm hover:text-primary transition-colors">Aarti</a>
+            <a href="#packing" className="text-sm hover:text-primary transition-colors">Backpack</a>
           </nav>
         </div>
 
@@ -936,6 +937,7 @@ export default function Home() {
                 <li><a href="#food" className="hover:text-primary transition-colors">Street Food</a></li>
                 <li><a href="#shopping" className="hover:text-primary transition-colors">Treasures</a></li>
                 <li><a href="#aarti" className="hover:text-primary transition-colors">Aarti</a></li>
+                <li><a href="#packing" className="hover:text-primary transition-colors">Backpack</a></li>
               </ul>
             </div>
             <div>
@@ -974,7 +976,7 @@ export default function Home() {
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/pasted_file_bpQRYT_image_4ae0fbc6.png"
             alt="WhatsApp"
-            className="w-16 h-16 rounded-full"
+            className="w-12 h-12 rounded-full"
           />
         </a>
       )}

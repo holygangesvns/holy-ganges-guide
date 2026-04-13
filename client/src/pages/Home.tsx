@@ -794,6 +794,131 @@ export default function Home() {
         </div>
       </section>
 
+      {/* What to Pack Section */}
+      <section id="packing" className="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50">
+        <div className="container">
+          <h2 className="section-heading text-center mb-12">What to Pack for Varanasi</h2>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {/* Clothing */}
+            <details className="group border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-white hover:bg-amber-50 transition-colors">
+                <h3 className="text-lg font-semibold text-foreground flex items-center gap-3">
+                  <span className="text-2xl">👕</span>
+                  Clothing & Footwear
+                </h3>
+                <span className="text-2xl group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="p-6 bg-amber-50 border-t border-border">
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• <strong>Lightweight, breathable cotton clothes</strong> — Varanasi is hot and humid, especially March-June</li>
+                  <li>• <strong>Long pants/skirts and loose shirts</strong> — Respectful for visiting temples and spiritual sites</li>
+                  <li>• <strong>Comfortable walking shoes</strong> — Narrow ghat lanes require sturdy footwear</li>
+                  <li>• <strong>Flip-flops or sandals</strong> — Easy to remove when entering temples</li>
+                  <li>• <strong>Light shawl or scarf</strong> — For temple visits and evening coolness</li>
+                  <li>• <strong>Rain jacket or umbrella</strong> — Monsoon season (July-September) brings heavy showers</li>
+                  <li>• <strong>Warm sweater</strong> — December-February evenings can be cool</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* Health & Toiletries */}
+            <details className="group border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-white hover:bg-amber-50 transition-colors">
+                <h3 className="text-lg font-semibold text-foreground flex items-center gap-3">
+                  <span className="text-2xl">🏥</span>
+                  Health & Toiletries
+                </h3>
+                <span className="text-2xl group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="p-6 bg-amber-50 border-t border-border">
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• <strong>Sunscreen (SPF 50+)</strong> — Essential for Ganges riverside exposure</li>
+                  <li>• <strong>Insect repellent</strong> — Mosquitoes are common, especially near water</li>
+                  <li>• <strong>Basic medications</strong> — Antacids, anti-diarrheal, pain relievers, antihistamines</li>
+                  <li>• <strong>First-aid kit</strong> — Band-aids, antiseptic cream, blister treatment</li>
+                  <li>• <strong>Prescription medications</strong> — Bring extra supplies; availability varies</li>
+                  <li>• <strong>Dehydration salts</strong> — For managing water-related issues</li>
+                  <li>• <strong>Personal hygiene items</strong> — Shampoo, soap, toothpaste (local options available)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* Essentials & Electronics */}
+            <details className="group border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-white hover:bg-amber-50 transition-colors">
+                <h3 className="text-lg font-semibold text-foreground flex items-center gap-3">
+                  <span className="text-2xl">📱</span>
+                  Essentials & Electronics
+                </h3>
+                <span className="text-2xl group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="p-6 bg-amber-50 border-t border-border">
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• <strong>Passport & travel documents</strong> — Keep copies separately</li>
+                  <li>• <strong>Phone charger & power bank</strong> — Power outages can occur</li>
+                  <li>• <strong>Universal power adapter</strong> — India uses Type A, C, D, and M plugs</li>
+                  <li>• <strong>Camera or smartphone</strong> — Capture memories of the Ghats and Aarti</li>
+                  <li>• <strong>Portable water bottle</strong> — Stay hydrated; refill at your accommodation</li>
+                  <li>• <strong>Reusable shopping bag</strong> — For exploring local markets</li>
+                  <li>• <strong>Notebook & pen</strong> — For journaling your spiritual journey</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* Cultural Etiquette */}
+            <details className="group border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-white hover:bg-amber-50 transition-colors">
+                <h3 className="text-lg font-semibold text-foreground flex items-center gap-3">
+                  <span className="text-2xl">🙏</span>
+                  Cultural Etiquette Tips
+                </h3>
+                <span className="text-2xl group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="p-6 bg-amber-50 border-t border-border">
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• <strong>Remove shoes</strong> before entering temples and sacred spaces</li>
+                  <li>• <strong>Respect photography restrictions</strong> — Some temples prohibit photos during ceremonies</li>
+                  <li>• <strong>Avoid touching religious items</strong> without permission</li>
+                  <li>• <strong>Dress modestly</strong> — Cover shoulders and knees at temples</li>
+                  <li>• <strong>Use right hand</strong> for eating and giving/receiving items (cultural practice)</li>
+                  <li>• <strong>Be respectful during Aarti</strong> — Maintain silence and observe the ceremony</li>
+                  <li>• <strong>Ask permission before photographing people</strong> — Always be courteous</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* Seasonal Notes */}
+            <details className="group border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-white hover:bg-amber-50 transition-colors">
+                <h3 className="text-lg font-semibold text-foreground flex items-center gap-3">
+                  <span className="text-2xl">🌡️</span>
+                  Seasonal Packing Guide
+                </h3>
+                <span className="text-2xl group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="p-6 bg-amber-50 border-t border-border space-y-4">
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Winter (Dec-Feb): 15-25°C</h4>
+                  <p className="text-sm text-muted-foreground">Pack warm sweaters, jackets, and a light scarf. Mornings and evenings are cool, but afternoons are pleasant.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Summer (Mar-May): 30-45°C</h4>
+                  <p className="text-sm text-muted-foreground">Pack minimal, lightweight clothing, wide-brimmed hat, sunglasses, and high-SPF sunscreen. Stay hydrated constantly.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Monsoon (Jun-Sep): 25-35°C</h4>
+                  <p className="text-sm text-muted-foreground">Pack waterproof jacket, umbrella, and quick-dry clothing. The Ganges can be rough; some ghats may be less accessible.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Autumn (Oct-Nov): 20-30°C</h4>
+                  <p className="text-sm text-muted-foreground">Pack light layers. Weather is pleasant and ideal for visiting. Bring a light shawl for evening temple visits.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-white border-t border-border py-12">
         <div className="container">

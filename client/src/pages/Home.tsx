@@ -212,6 +212,7 @@ export default function Home() {
             <a href="#shopping" className="text-sm hover:text-primary transition-colors">Treasures</a>
             <a href="#aarti" className="text-sm hover:text-primary transition-colors">Aarti</a>
             <a href="#packing" className="text-sm hover:text-primary transition-colors">Backpack</a>
+            <a href="/gallery" className="text-sm hover:text-primary transition-colors">Gallery</a>
           </nav>
         </div>
 

@@ -96,7 +96,7 @@ const galleryImages: GalleryImage[] = [
   category: 'common',
   title: 'Sacred Wall Art',
   description: 'A beautifully painted depiction of Lord Shiva enhancing the spiritual ambiance of the space'
-},
+}
 ];
 
 export default function Gallery() {
@@ -110,7 +110,7 @@ export default function Gallery() {
   const categoryLabels = {
     dorms: '🛏️ Dorm Rooms',
     common: '🏠 Common Areas',
-    river: '🌊 River Views'
+    river: '🌊 River Views',
     views: '🌄 Views'
   };
 

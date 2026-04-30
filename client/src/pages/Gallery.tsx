@@ -64,7 +64,7 @@ const galleryImages: GalleryImage[] = [
     category: 'river',
     title: 'River Ganges Panorama',
     description: 'Stunning panoramic views of the holy River Ganges'
-  }
+  },
   {
   id: '7',
   src: '/assets/gallery/Dorm 3.jpg',

@@ -11,7 +11,7 @@ interface GalleryImage {
   id: string;
   src: string;
   alt: string;
-  category: 'dorms' | 'common' | 'river';
+  category: 'dorms' | 'common' | 'river' | 'views';
   title: string;
   description: string;
 }
@@ -65,11 +65,43 @@ const galleryImages: GalleryImage[] = [
     title: 'River Ganges Panorama',
     description: 'Stunning panoramic views of the holy River Ganges'
   }
+  {
+  id: '7',
+  src: '/assets/gallery/Dorm 3.jpg',
+  alt: 'Dorm Beds with Curtains and Lockers',
+  category: 'dorms',
+  title: 'Private & Secure Sleeping Pods',
+  description: 'Each bed features privacy curtains and personal lockers for a comfortable and secure stay'
+},
+{
+  id: '8',
+  src: '/assets/gallery/Sunrise.jpg',
+  alt: 'Sunrise over Varanasi',
+  category: 'views',
+  title: 'Golden Sunrise',
+  description: 'Experience the serene beauty of sunrise over the sacred ghats'
+},
+{
+  id: '9',
+  src: '/assets/gallery/Sunset.jpg',
+  alt: 'Sunset over Ganges',
+  category: 'views',
+  title: 'Peaceful Sunset',
+  description: 'Unwind with breathtaking sunset views along the holy Ganges'
+},
+{
+  id: '10',
+  src: '/assets/gallery/Wallart.jpg',
+  alt: 'Lord Shiva Wall Art',
+  category: 'common',
+  title: 'Sacred Wall Art',
+  description: 'A beautifully painted depiction of Lord Shiva enhancing the spiritual ambiance of the space'
+},
 ];
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
-  const [activeFilter, setActiveFilter] = useState<'all' | 'dorms' | 'common' | 'river'>('all');
+  const [activeFilter, setActiveFilter] = useState<'all' | 'dorms' | 'common' | 'river' | 'views'>('all');
 
   const filteredImages = activeFilter === 'all' 
     ? galleryImages 
@@ -79,6 +111,7 @@ export default function Gallery() {
     dorms: '🛏️ Dorm Rooms',
     common: '🏠 Common Areas',
     river: '🌊 River Views'
+    views: '🌄 Views'
   };
 
   return (

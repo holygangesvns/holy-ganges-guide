@@ -98,7 +98,7 @@ const galleryImages: GalleryImage[] = [
   description: 'A beautifully painted depiction of Lord Shiva enhancing the spiritual ambiance of the space'
 },
   {
-  id: '10',
+  id: '11',
   src: '/assets/gallery/lift.jpg',
   alt: 'Lift Area',
   category: 'lobby',
@@ -106,7 +106,7 @@ const galleryImages: GalleryImage[] = [
   description: 'Easy and smooth lift access connecting all floors for your comfort'
 },
 {
-  id: '11',
+  id: '12',
   src: '/assets/gallery/reception.jpg',
   alt: 'Reception Desk',
   category: 'lobby',
@@ -114,7 +114,7 @@ const galleryImages: GalleryImage[] = [
   description: 'Friendly reception area to assist guests and ensure a smooth stay'
 },
   {
-  id: '12',
+  id: '13',
   src: '/assets/gallery/balcony.jpg',
   alt: 'Balcony View',
   category: 'views',
@@ -122,7 +122,7 @@ const galleryImages: GalleryImage[] = [
   description: 'Relax and enjoy peaceful surroundings from our open balconies'
 },
 {
-  id: '13',
+  id: '14',
   src: '/assets/gallery/balconyy.jpg',
   alt: 'Extended Balcony View',
   category: 'views',
@@ -130,7 +130,7 @@ const galleryImages: GalleryImage[] = [
   description: 'A wider perspective of the serene views surrounding the property'
 },
 {
-  id: '14',
+  id: '15',
   src: '/assets/gallery/smoking.jpg',
   alt: 'Smoking Area',
   category: 'views',
@@ -138,7 +138,7 @@ const galleryImages: GalleryImage[] = [
   description: 'Comfortable open-air space for guests with a relaxing vibe'
 },
   {
-  id: '15',
+  id: '16',
   src: '/assets/gallery/water.jpg',
   alt: 'Water Facility',
   category: 'washrooms',
@@ -146,7 +146,7 @@ const galleryImages: GalleryImage[] = [
   description: 'Continuous clean water supply ensuring hygiene and comfort'
 },
 {
-  id: '16',
+  id: '17',
   src: '/assets/gallery/washroom.jpg',
   alt: 'Washroom Interior',
   category: 'washrooms',
@@ -157,7 +157,7 @@ const galleryImages: GalleryImage[] = [
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
-  const [activeFilter, setActiveFilter] = useState<'all' | 'dorms' | 'common' | 'river' | 'views' | 'lobby' | 'washrooms'>
+  const [activeFilter, setActiveFilter] = useState<'all' | 'dorms' | 'common' | 'river' | 'views' | 'lobby' | 'washrooms'>('all');
   const filteredImages = activeFilter === 'all' 
     ? galleryImages 
     : galleryImages.filter(img => img.category === activeFilter);
@@ -219,7 +219,7 @@ export default function Gallery() {
             {(Object.entries(categoryLabels) as [keyof typeof categoryLabels, string][]).map(([key, label]) => (
               <button
                 key={key}
-                onClick={() => setActiveFilter(key as 'dorms' | 'common' | 'river')}
+                onClick={() => setActiveFilter(key as 'dorms' | 'common' | 'river' | 'views' | 'lobby' | 'washrooms')}
                 className={`px-6 py-2 rounded-full font-medium transition-all ${
                   activeFilter === key
                     ? 'bg-primary text-white shadow-md'

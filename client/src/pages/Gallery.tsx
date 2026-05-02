@@ -11,7 +11,7 @@ interface GalleryImage {
   id: string;
   src: string;
   alt: string;
-  category: 'dorms' | 'common' | 'river' | 'views';
+  category: 'dorms' | 'common' | 'river' | 'views' | 'lobby' | 'washrooms';
   title: string;
   description: string;
 }
@@ -101,8 +101,7 @@ const galleryImages: GalleryImage[] = [
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
-  const [activeFilter, setActiveFilter] = useState<'all' | 'dorms' | 'common' | 'river' | 'views'>('all');
-
+  const [activeFilter, setActiveFilter] = useState<'all' | 'dorms' | 'common' | 'river' | 'views' | 'lobby' | 'washrooms'>
   const filteredImages = activeFilter === 'all' 
     ? galleryImages 
     : galleryImages.filter(img => img.category === activeFilter);
@@ -111,7 +110,9 @@ export default function Gallery() {
     dorms: '🛏️ Dorm Rooms',
     common: '🏠 Common Areas',
     river: '🌊 River Views',
-    views: '🌄 Views'
+    views: '🌄 Views',
+    lobby: '🏨 Lobby',
+  washrooms: '🚿 Washrooms'
   };
 
   return (

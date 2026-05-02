@@ -96,6 +96,62 @@ const galleryImages: GalleryImage[] = [
   category: 'common',
   title: 'Sacred Wall Art',
   description: 'A beautifully painted depiction of Lord Shiva enhancing the spiritual ambiance of the space'
+},
+  {
+  id: '10',
+  src: '/assets/gallery/lift.jpg',
+  alt: 'Lift Area',
+  category: 'lobby',
+  title: 'Convenient Lift Access',
+  description: 'Easy and smooth lift access connecting all floors for your comfort'
+},
+{
+  id: '11',
+  src: '/assets/gallery/reception.jpg',
+  alt: 'Reception Desk',
+  category: 'lobby',
+  title: 'Welcoming Reception',
+  description: 'Friendly reception area to assist guests and ensure a smooth stay'
+},
+  {
+  id: '12',
+  src: '/assets/gallery/balcony.jpg',
+  alt: 'Balcony View',
+  category: 'views',
+  title: 'Open Balcony Views',
+  description: 'Relax and enjoy peaceful surroundings from our open balconies'
+},
+{
+  id: '13',
+  src: '/assets/gallery/balconyy.jpg',
+  alt: 'Extended Balcony View',
+  category: 'views',
+  title: 'Extended Scenic Balcony',
+  description: 'A wider perspective of the serene views surrounding the property'
+},
+{
+  id: '14',
+  src: '/assets/gallery/smoking.jpg',
+  alt: 'Smoking Area',
+  category: 'views',
+  title: 'Designated Smoking Area',
+  description: 'Comfortable open-air space for guests with a relaxing vibe'
+},
+  {
+  id: '15',
+  src: '/assets/gallery/water.jpg',
+  alt: 'Water Facility',
+  category: 'washrooms',
+  title: 'Clean Water Facilities',
+  description: 'Continuous clean water supply ensuring hygiene and comfort'
+},
+{
+  id: '16',
+  src: '/assets/gallery/washroom.jpg',
+  alt: 'Washroom Interior',
+  category: 'washrooms',
+  title: 'Modern Washrooms',
+  description: 'Neat and hygienic washrooms maintained for a comfortable experience'
 }
 ];
 

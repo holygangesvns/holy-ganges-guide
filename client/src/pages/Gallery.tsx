@@ -43,7 +43,7 @@ const galleryImages: GalleryImage[] = [
   },
   {
     id: '4',
-    src: '/assets/gallery/common_2.jpg',
+    src: '/assets/gallery/Common_2.jpg',
     alt: 'Dining and Recreation Space',
     category: 'common',
     title: 'Common Balcony',

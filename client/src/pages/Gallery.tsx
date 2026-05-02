@@ -46,8 +46,8 @@ const galleryImages: GalleryImage[] = [
     src: '/assets/gallery/common_2.jpg',
     alt: 'Dining and Recreation Space',
     category: 'common',
-    title: 'Dining & Recreation',
-    description: 'Comfortable spaces for dining, socializing, and relaxation'
+    title: 'Common Balcony',
+    description: 'Comfortable spaces for Views, Relaxation, Yoga'
   },
   {
     id: '5',

@@ -10,6 +10,7 @@
 import { MapPin, Clock, Utensils, Navigation } from 'lucide-react';
 import { useState } from 'react';
 import { MapView } from '@/components/Map';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('booking');
@@ -207,6 +208,12 @@ export default function Home() {
             <h1 className="text-lg font-semibold text-primary">Holy Ganges Dorms</h1>
           </div>
           <nav className="hidden md:flex gap-8">
+  ...
+</nav>
+
+<div className="md:hidden">
+  <Navbar />
+</div>
             <a href="#map" className="text-sm hover:text-primary transition-colors">Walking Map</a>
             <a href="#food" className="text-sm hover:text-primary transition-colors">Street Food</a>
             <a href="#shopping" className="text-sm hover:text-primary transition-colors">Treasures</a>

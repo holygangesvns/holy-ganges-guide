@@ -207,21 +207,18 @@ export default function Home() {
             <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/1_a6b69119.jpg" alt="Holy Ganges Dorms" className="w-10 h-10 rounded-full object-cover" />
             <h1 className="text-lg font-semibold text-primary">Holy Ganges Dorms</h1>
           </div>
-          <nav className="hidden md:flex gap-8">
-  ...
+         <nav className="hidden md:flex gap-8">
+  <a href="#map" className="text-sm hover:text-primary transition-colors">Walking Map</a>
+  <a href="#food" className="text-sm hover:text-primary transition-colors">Street Food</a>
+  <a href="#shopping" className="text-sm hover:text-primary transition-colors">Treasures</a>
+  <a href="#aarti" className="text-sm hover:text-primary transition-colors">Aarti</a>
+  <a href="#packing" className="text-sm hover:text-primary transition-colors">Backpack</a>
+  <a href="/gallery" className="text-sm hover:text-primary transition-colors">Gallery</a>
 </nav>
 
 <div className="md:hidden">
   <Navbar />
 </div>
-            <a href="#map" className="text-sm hover:text-primary transition-colors">Walking Map</a>
-            <a href="#food" className="text-sm hover:text-primary transition-colors">Street Food</a>
-            <a href="#shopping" className="text-sm hover:text-primary transition-colors">Treasures</a>
-            <a href="#aarti" className="text-sm hover:text-primary transition-colors">Aarti</a>
-            <a href="#packing" className="text-sm hover:text-primary transition-colors">Backpack</a>
-            <a href="/gallery" className="text-sm hover:text-primary transition-colors">Gallery</a>
-          </nav>
-        </div>
 
         {/* OTA Links Section */}
         <div className="bg-gray-50 border-t border-border">

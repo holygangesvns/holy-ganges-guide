@@ -236,19 +236,20 @@ export default function Gallery() {
       {/* Gallery Grid */}
       <section className="py-16">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
             {filteredImages.map((image) => (
               <div
-                key={image.id}
-                onClick={() => setSelectedImage(image)}
-                className="group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
-              >
-                <div className="relative h-64 overflow-hidden bg-gray-100">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
+           key={image.id}
+  onClick={() => setSelectedImage(image)}
+  className="group cursor-pointer mb-6 break-inside-avoid overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+>
+                <div className="relative overflow-hidden bg-gray-100">
+                 <img
+  src={image.src}
+  alt={image.alt}
+  className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
+/>
+                  <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end">
                     <div className="w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <h3 className="font-semibold">{image.title}</h3>

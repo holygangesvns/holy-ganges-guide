@@ -86,39 +86,36 @@ export default function Gallery() {
   return (
     <div className="min-h-screen bg-background text-foreground">
 
-      {/* Gallery Grid */}
-      <section className="py-16">
-        <div className="container">
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
-  {filteredImages.map((image) => (
-    <div
-      key={image.id}
-      onClick={() => setSelectedImage(image)}
-      className="group cursor-pointer mb-6 break-inside-avoid overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
-    >
-      <div className="relative overflow-hidden bg-gray-100">
+     {/* Gallery Grid */}
+<section className="py-16">
+  <div className="container">
+    <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
+      {filteredImages.map((image) => (
+        <div
+          key={image.id}
+          onClick={() => setSelectedImage(image)}
+          className="group cursor-pointer mb-6 break-inside-avoid overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+        >
+          <div className="relative overflow-hidden bg-gray-100">
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
+            />
 
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
-        />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end">
+              <div className="w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="font-semibold">{image.title}</h3>
+                <p className="text-sm text-gray-200">{image.description}</p>
+              </div>
+            </div>
 
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end">
-          <div className="w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <h3 className="font-semibold">{image.title}</h3>
-            <p className="text-sm text-gray-200">{image.description}</p>
           </div>
         </div>
-
-      </div>
+      ))}
     </div>
-  ))}
-</div>
-
-          </div>
-        </div>
-      </section>
+  </div>
+</section>
 
       {/* Lightbox */}
       {selectedImage && (

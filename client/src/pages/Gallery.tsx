@@ -164,30 +164,53 @@ export default function Gallery() {
         </h2>
 
         <div className="flex gap-4 justify-center flex-wrap">
-          <a
-  href="https://www.booking.com/hotel/in/holy-ganges-dorms-varanasi.html"
-  target="_blank"
-  className="px-6 py-3 bg-black text-white rounded-xl"
->
-  Booking.com
-</a>
 
-<a
-  href="https://www.agoda.com/en-in/holy-ganges-dorms/hotel/varanasi-in.html"
-  target="_blank"
-  className="px-6 py-3 border rounded-xl"
->
-  Agoda
-</a>
+  {/* Booking.com */}
+  <a
+    href="https://www.booking.com/hotel/in/holy-ganges-dorms-varanasi.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-3 px-6 py-3 w-48 bg-[#003580] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
+  >
+    <img
+      src="/assets/logos/booking.com_logo.svg"
+      alt="Booking.com"
+      className="w-5 h-5 object-contain"
+    />
+    <span className="font-medium">Booking.com</span>
+  </a>
 
-<a
-  href="https://www.makemytrip.com/hotels/holy_ganges_vns-details-varanasi.html"
-  target="_blank"
-  className="px-6 py-3 border rounded-xl"
->
-  MakeMyTrip
-</a>
-        </div>
+  {/* Agoda */}
+  <a
+    href="https://www.agoda.com/en-in/holy-ganges-dorms/hotel/varanasi-in.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-3 px-6 py-3 w-48 bg-[#FF6F00] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
+  >
+    <img
+      src="/assets/logos/agoda_logo.svg"
+      alt="Agoda"
+      className="w-5 h-5 object-contain"
+    />
+    <span className="font-medium">Agoda</span>
+  </a>
+
+  {/* MakeMyTrip */}
+  <a
+    href="https://www.makemytrip.com/hotels/holy_ganges_vns-details-varanasi.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-3 px-6 py-3 w-48 bg-[#E91E63] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
+  >
+    <img
+      src="/assets/logos/makemytrip_logo.svg"
+      alt="MakeMyTrip"
+      className="w-5 h-5 object-contain"
+    />
+    <span className="font-medium">MakeMyTrip</span>
+  </a>
+
+</div>
       </section>
 
     </div>

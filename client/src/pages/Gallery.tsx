@@ -86,21 +86,21 @@ export default function Gallery() {
   return (
     <div className="min-h-screen bg-background text-foreground">
 
-     {/* Gallery Grid */}
+  {/* Gallery Grid */}
 <section className="py-16">
   <div className="container">
-    <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {filteredImages.map((image) => (
         <div
           key={image.id}
           onClick={() => setSelectedImage(image)}
-          className="group cursor-pointer mb-6 break-inside-avoid overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+          className="group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
         >
           <div className="relative overflow-hidden bg-gray-100">
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
             />
 
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end">
@@ -116,7 +116,6 @@ export default function Gallery() {
     </div>
   </div>
 </section>
-
       {/* Lightbox */}
       {selectedImage && (
         <div

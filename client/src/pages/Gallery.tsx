@@ -181,7 +181,7 @@ export default function Gallery() {
 </a>
 
 <a
-  href="https://www.makemytrip.com/hotels/"
+  href="https://www.makemytrip.com/hotels/holy_ganges_vns-details-varanasi.html"
   target="_blank"
   className="px-6 py-3 border rounded-xl"
 >

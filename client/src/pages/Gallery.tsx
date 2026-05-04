@@ -31,7 +31,7 @@ const galleryImages: GalleryImage[] = [
   { id: '14', src: '/assets/gallery/lift.jpg', alt: 'Lift', category: 'lobby', title: 'Lift Access', description: 'Smooth lift connectivity across floors' },
   { id: '15', src: '/assets/gallery/reception.jpg', alt: 'Reception', category: 'lobby', title: 'Reception Desk', description: 'Friendly welcome and assistance' },
 
-  { id: '16', src: '/assets/gallery/washroom.jpg', alt: 'Washroom', category: 'washrooms', title: 'Clean Washrooms', description: 'Hygienic and well-maintained spaces' },
+ { id: '16', src: '/assets/gallery/washroom.jpg', alt: 'Washroom', category: 'washrooms', title: 'Clean Washrooms', description: 'Hygienic and well-maintained spaces' },
   { id: '17', src: '/assets/gallery/water.jpg', alt: 'Water', category: 'washrooms', title: 'Water Purifier', description: 'Safe and clean drinking water facility' },
 ];
 
@@ -44,7 +44,15 @@ export default function Gallery() {
       ? galleryImages
       : galleryImages.filter(img => img.category === activeFilter);
 
-  const categories = ['all', 'dorms', 'common', 'river', 'views', 'lobby', 'washrooms'];
+  const categoryLabels: Record<string, string> = {
+  all: '📸 All Photos',
+  dorms: '🛏️ Dorm Rooms',
+  common: '🏠 Common Areas',
+  river: '🌊 River Views',
+  views: '🌄 Views',
+  lobby: '🏨 Lobby',
+  washrooms: '🚿 Washrooms'
+};
 
   return (
     <div className="min-h-screen bg-[#f8f5f0]">
@@ -62,19 +70,19 @@ export default function Gallery() {
 
       {/* FILTERS */}
       <div className="flex flex-wrap justify-center gap-3 mb-10">
-        {categories.map(cat => (
-          <button
-            key={cat}
-            onClick={() => setActiveFilter(cat)}
-            className={`px-5 py-2 rounded-full text-sm transition ${
-              activeFilter === cat
-                ? 'bg-[#c19a6b] text-white'
-                : 'bg-white shadow hover:bg-gray-100'
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
+        {Object.entries(categoryLabels).map(([key, label]) => (
+  <button
+    key={key}
+    onClick={() => setActiveFilter(key)}
+    className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+  activeFilter === key
+    ? 'bg-[#c19a6b] text-white shadow-md scale-105'
+    : 'bg-white shadow hover:bg-gray-100 hover:scale-105'
+}`}
+  >
+    {label}
+  </button>
+))}
       </div>
 
       {/* GRID */}

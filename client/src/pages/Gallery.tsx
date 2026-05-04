@@ -173,7 +173,7 @@ export default function Gallery() {
     className="flex items-center justify-center gap-4 px-6 py-3 w-56 bg-[#003580] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
   >
     <img
-      src="/assets/logos/booking_logo.svg"
+      src="/assets/gallery/logos/booking_logo.svg"
       alt="Booking.com"
       className="w-12 h-12 object-contain"
       onError={(e) => (e.currentTarget.style.display = "none")}
@@ -189,7 +189,7 @@ export default function Gallery() {
     className="flex items-center justify-center gap-4 px-6 py-3 w-56 bg-[#FF6F00] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
   >
     <img
-      src="/assets/logos/agoda_logo.svg"
+      src="/assets/gallery/logos/agoda_logo.svg"
       alt="Agoda"
       className="w-12 h-12 object-contain"
       onError={(e) => (e.currentTarget.style.display = "none")}
@@ -205,7 +205,7 @@ export default function Gallery() {
     className="flex items-center justify-center gap-4 px-6 py-3 w-56 bg-[#E91E63] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
   >
     <img
-      src="/assets/logos/makemytrip_logo.svg"
+      src="/assets/gallery/logos/makemytrip_logo.svg"
       alt="MakeMyTrip"
       className="w-12 h-12 object-contain"
       onError={(e) => (e.currentTarget.style.display = "none")}

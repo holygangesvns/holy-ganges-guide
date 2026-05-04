@@ -293,6 +293,12 @@ export default function Home() {
             >
               💬 Book Your Stay Now
             </a>
+            <a
+  href="/gallery"
+  className="px-6 py-3 border border-[#c19a6b] text-[#c19a6b] rounded-xl hover:bg-[#c19a6b] hover:text-white transition"
+>
+  Have a look 📷
+</a>
           </div>
         </div>
       </section>

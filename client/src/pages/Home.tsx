@@ -295,9 +295,9 @@ export default function Home() {
             </a>
             <a
   href="/gallery"
-  className="px-6 py-3 border border-[#c19a6b] text-[#c19a6b] rounded-xl hover:bg-[#c19a6b] hover:text-white transition"
+  className="px-6 py-3 bg-white/20 backdrop-blur-md text-white rounded-full font-medium hover:bg-white/30 transition border border-white/30"
 >
-  Have a look 📷
+  📷 Have a look
 </a>
           </div>
         </div>

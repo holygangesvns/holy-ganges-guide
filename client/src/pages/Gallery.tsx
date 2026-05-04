@@ -170,14 +170,15 @@ export default function Gallery() {
     href="https://www.booking.com/hotel/in/holy-ganges-dorms-varanasi.html"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center gap-3 px-6 py-3 w-48 bg-[#003580] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
+    className="flex items-center justify-center gap-4 px-6 py-3 w-56 bg-[#003580] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
   >
     <img
-      src="/assets/gallery/logos/booking.com_logo.svg"
+      src="/assets/logos/booking_logo.svg"
       alt="Booking.com"
-      className="w-5 h-5 object-contain"
+      className="w-12 h-12 object-contain"
+      onError={(e) => (e.currentTarget.style.display = "none")}
     />
-    <span className="font-medium">Booking.com</span>
+    <span className="font-medium text-base">Booking.com</span>
   </a>
 
   {/* Agoda */}
@@ -185,14 +186,15 @@ export default function Gallery() {
     href="https://www.agoda.com/en-in/holy-ganges-dorms/hotel/varanasi-in.html"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center gap-3 px-6 py-3 w-48 bg-[#FF6F00] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
+    className="flex items-center justify-center gap-4 px-6 py-3 w-56 bg-[#FF6F00] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
   >
     <img
-      src="/assets/gallery/logos/agoda_logo.svg"
+      src="/assets/logos/agoda_logo.svg"
       alt="Agoda"
-      className="w-5 h-5 object-contain"
+      className="w-12 h-12 object-contain"
+      onError={(e) => (e.currentTarget.style.display = "none")}
     />
-    <span className="font-medium">Agoda</span>
+    <span className="font-medium text-base">Agoda</span>
   </a>
 
   {/* MakeMyTrip */}
@@ -200,14 +202,15 @@ export default function Gallery() {
     href="https://www.makemytrip.com/hotels/holy_ganges_vns-details-varanasi.html"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center gap-3 px-6 py-3 w-48 bg-[#E91E63] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
+    className="flex items-center justify-center gap-4 px-6 py-3 w-56 bg-[#E91E63] text-white rounded-xl shadow-md hover:shadow-lg hover:scale-105 hover:ring-2 hover:ring-[#c19a6b] transition-all duration-200"
   >
     <img
-      src="/assets/gallery/logos/makemytrip_logo.svg"
+      src="/assets/logos/makemytrip_logo.svg"
       alt="MakeMyTrip"
-      className="w-5 h-5 object-contain"
+      className="w-12 h-12 object-contain"
+      onError={(e) => (e.currentTarget.style.display = "none")}
     />
-    <span className="font-medium">MakeMyTrip</span>
+    <span className="font-medium text-base">MakeMyTrip</span>
   </a>
 
 </div>

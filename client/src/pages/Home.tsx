@@ -9,10 +9,15 @@
 
 import { MapPin, Clock, Utensils, Navigation } from 'lucide-react';
 import { useState } from 'react';
+import { useAuth } from '@/_core/hooks/useAuth';
 import { MapView } from '@/components/Map';
 import Navbar from '@/components/Navbar';
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const [activeTab, setActiveTab] = useState('booking');
   const [showWhatsAppWidget, setShowWhatsAppWidget] = useState(false);
 
@@ -307,11 +312,11 @@ export default function Home() {
               💬 Book Your Stay Now
             </a>
             <a
-  href="/gallery"
-  className="px-6 py-3 bg-white/20 backdrop-blur-md text-white rounded-full font-medium hover:bg-white/30 transition border border-white/30"
->
-  📷 Have a look
-</a>
+              href="/gallery"
+              className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium"
+            >
+              📷 Have a Look
+            </a>
           </div>
         </div>
       </section>

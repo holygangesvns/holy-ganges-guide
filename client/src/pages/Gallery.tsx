@@ -18,22 +18,22 @@ const galleryImages: GalleryImage[] = [
 
   { id: '4', src: '/assets/gallery/common_1.jpg', alt: 'Common Area', category: 'common', title: 'Common Chill Area', description: 'Open space to relax and connect with others' },
   { id: '5', src: '/assets/gallery/common_2.jpg', alt: 'Balcony Chill Area', category: 'common', title: 'Balcony Lounge', description: 'Sit back and relax with a peaceful balcony vibe' },
-  { id: '6', src: '/assets/gallery/Wallart.jpg', alt: 'Shiva Wall Art', category: 'common', title: 'Sacred Wall Art', description: 'Hand-painted meditative Shiva artwork' },
+  { id: '6', src: '/manus-storage/Wallart_17381d88.jpg', alt: 'Shiva Wall Art', category: 'common', title: 'Sacred Wall Art', description: 'Hand-painted meditative Shiva artwork' },
 
   { id: '7', src: '/assets/gallery/river_1.jpg', alt: 'Ganges View', category: 'river', title: 'Ganges View', description: 'Sacred river flowing beside the city' },
   { id: '8', src: '/assets/gallery/river_2.jpg', alt: 'Ganges Panorama', category: 'river', title: 'River Panorama', description: 'Wide peaceful views of the Ganges' },
 
   { id: '9', src: '/assets/gallery/Sunrise.jpg', alt: 'Sunrise', category: 'views', title: 'Golden Sunrise', description: 'Calm sunrise over Varanasi skyline' },
   { id: '10', src: '/assets/gallery/Sunset.jpg', alt: 'Sunset', category: 'views', title: 'Evening Sunset', description: 'Relaxing sunset by the river' },
-  { id: '11', src: '/assets/gallery/balcony.jpg', alt: 'Balcony Seating', category: 'views', title: 'Balcony Seating', description: 'Chill with a chair and table setup' },
-  { id: '12', src: '/assets/gallery/balconyy.jpg', alt: 'City View', category: 'views', title: 'City View Balcony', description: 'Open view overlooking the city' },
-  { id: '13', src: '/assets/gallery/smoking.jpg', alt: 'Smoking Area', category: 'views', title: 'Smoking Zone', description: 'Dedicated open-air smoking area' },
+  { id: '11', src: '/manus-storage/balcony_823a786b.jpg', alt: 'Balcony Seating', category: 'views', title: 'Balcony Seating', description: 'Chill with a chair and table setup' },
+  { id: '12', src: '/manus-storage/balconyy_ed3a9960.jpg', alt: 'City View', category: 'views', title: 'City View Balcony', description: 'Open view overlooking the city' },
+  { id: '13', src: '/manus-storage/smoking_5e44562b.jpg', alt: 'Smoking Area', category: 'views', title: 'Smoking Zone', description: 'Dedicated open-air smoking area' },
 
-  { id: '14', src: '/assets/gallery/lift.jpg', alt: 'Lift', category: 'lobby', title: 'Lift Access', description: 'Smooth lift connectivity across floors' },
-  { id: '15', src: '/assets/gallery/reception.jpg', alt: 'Reception', category: 'lobby', title: 'Reception Desk', description: 'Friendly welcome and assistance' },
+  { id: '14', src: '/manus-storage/lift_53831a6a.jpg', alt: 'Lift', category: 'lobby', title: 'Lift Access', description: 'Smooth lift connectivity across floors' },
+  { id: '15', src: '/manus-storage/reception_7010cc3b.jpg', alt: 'Reception', category: 'lobby', title: 'Reception Desk', description: 'Friendly welcome and assistance' },
 
- { id: '16', src: '/assets/gallery/washroom.jpg', alt: 'Washroom', category: 'washrooms', title: 'Clean Washrooms', description: 'Hygienic and well-maintained spaces' },
-  { id: '17', src: '/assets/gallery/water.jpg', alt: 'Water', category: 'washrooms', title: 'Water Purifier', description: 'Safe and clean drinking water facility' },
+ { id: '16', src: '/manus-storage/washroom_d1048a39.jpg', alt: 'Washroom', category: 'washrooms', title: 'Clean Washrooms', description: 'Hygienic and well-maintained spaces' },
+  { id: '17', src: '/manus-storage/water_706a0495.jpg', alt: 'Water', category: 'washrooms', title: 'Water Purifier', description: 'Safe and clean drinking water facility' },
 ];
 
 export default function Gallery() {

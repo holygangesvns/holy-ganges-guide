@@ -47,12 +47,12 @@ export default function Navbar() {
 
           {/* OVERLAY */}
           <div
-            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={() => setMenuOpen(false)}
           />
 
           {/* SIDE MENU */}
-          <div className="absolute right-0 top-0 h-full w-72 bg-white shadow-xl p-6 flex flex-col gap-6">
+          <div className="absolute right-0 top-0 h-screen w-72 bg-white shadow-2xl p-6 flex flex-col gap-6 overflow-y-auto">
 
             {/* CLOSE */}
             <button

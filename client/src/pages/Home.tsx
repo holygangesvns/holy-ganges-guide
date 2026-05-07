@@ -296,10 +296,10 @@ export default function Home() {
           <p className="text-xl md:text-2xl font-light drop-shadow-md mb-8">
             A sacred journey through the City of Light
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full px-4">
             <a
               href="#map"
-              className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium"
+              className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium w-full sm:w-auto text-center"
             >
               ✈️ Begin Your Journey
             </a>
@@ -307,13 +307,13 @@ export default function Home() {
               href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%27d%20like%20to%20book%20my%20stay%20in%20Varanasi"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all font-medium"
+              className="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all font-medium w-full sm:w-auto text-center"
             >
               💬 Book Your Stay Now
             </a>
             <a
               href="/gallery"
-              className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium"
+              className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium w-full sm:w-auto text-center"
             >
               📷 Have a Look
             </a>

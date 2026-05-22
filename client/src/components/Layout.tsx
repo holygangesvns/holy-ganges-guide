@@ -1,11 +1,14 @@
-import Header from './Header'
-import { Outlet } from 'react-router-dom'
+import Header from "./Header";
 
-export default function Layout() {
+export default function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <Header />
-      <Outlet />
+      {children}
     </>
-  )
+  );
 }

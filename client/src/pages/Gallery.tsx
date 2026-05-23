@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
-import Navbar from '../components/Navbar';
 
 interface GalleryImage {
   id: string;
@@ -58,7 +57,7 @@ export default function Gallery() {
   return (
   <div className="min-h-screen bg-[#f8f5f0]">
 
-    <Navbar />
+  
 
       
 

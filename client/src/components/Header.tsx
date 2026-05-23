@@ -1,56 +1,55 @@
-import { Link } from "wouter";
+'use client';
+
+import Navbar from '@/components/Navbar';
 
 export default function Header() {
   return (
-    <header className="w-full bg-white border-b border-[#d8c7b0]">
-      <div className="flex items-center justify-between px-6 py-4">
-
-        {/* Logo + Brand */}
-        <Link href="/" className="flex items-center gap-3">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
+      <div className="container py-4 flex items-center justify-between">
+        <div className="flex items-center gap-3">
           <img
-            src="/assets/logo.png"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/1_a6b69119.jpg"
             alt="Holy Ganges Dorms"
-            className="h-12 w-12 rounded-full"
+            className="w-10 h-10 rounded-full object-cover"
           />
 
-          <h1 className="text-3xl font-serif text-[#c68b59]">
+          <h1 className="text-lg font-semibold text-primary">
             Holy Ganges Dorms
           </h1>
-        </Link>
+        </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm">
-
-          <Link href="/">Home</Link>
-
-          <Link href="/gallery">Gallery</Link>
-
-          <a href="/#guest-testimonials">
-            Reviews
+        <nav className="hidden md:flex gap-8">
+          <a href="/#map" className="text-sm hover:text-primary transition-colors">
+            Walking Map
           </a>
 
-          <a
-            href="https://wa.me/919151563046"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book Now
+          <a href="/#food" className="text-sm hover:text-primary transition-colors">
+            Street Food
           </a>
 
-          <Link href="/walking-map">Location</Link>
+          <a href="/#shopping" className="text-sm hover:text-primary transition-colors">
+            Treasures
+          </a>
 
-          <Link href="/street-food">Street Food</Link>
+          <a href="/#aarti" className="text-sm hover:text-primary transition-colors">
+            Aarti
+          </a>
 
-          <Link href="/treasures">Treasures</Link>
+          <a href="/#packing" className="text-sm hover:text-primary transition-colors">
+            Backpack
+          </a>
 
-          <Link href="/aarti">Aarti</Link>
-
-          <Link href="/backpack">Backpack</Link>
-
-          <Link href="/support">Support</Link>
-
+          <a href="/gallery" className="text-sm hover:text-primary transition-colors">
+            Gallery
+          </a>
         </nav>
+
+        {/* Mobile Navigation */}
+        <div className="md:hidden">
+          <Navbar />
+        </div>
       </div>
     </header>
-  )
+  );
 }

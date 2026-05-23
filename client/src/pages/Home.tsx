@@ -254,7 +254,6 @@ export default function Home() {
       </div>
     </div>
   </div>
-</header>
 
       {/* Hero Section */}
       <section className="hero-section relative h-screen flex items-center justify-center overflow-hidden">

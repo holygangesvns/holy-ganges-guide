@@ -40,10 +40,9 @@ export default function Navbar() {
             {/* LINKS */}
             <nav className="flex flex-col gap-5 text-lg text-gray-700">
               <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-              <a href="/#map" onClick={() => setMenuOpen(false)}>Walking Map</a>
+              <a href="/#map" onClick={() => setMenuOpen(false)}>Location📍</a>
               <a href="/#food" onClick={() => setMenuOpen(false)}>Street Food</a>
               <a href="/#shopping" onClick={() => setMenuOpen(false)}>Treasures</a>
-              <a href="/#aarti" onClick={() => setMenuOpen(false)}>Aarti</a>
               <a href="/#packing" onClick={() => setMenuOpen(false)}>Backpack</a>
               <a href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
               <a href="/blogs" onClick={() => setMenuOpen(false)}>Blogs</a>

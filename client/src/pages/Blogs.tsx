@@ -89,64 +89,41 @@ const blogDetails: Record<string, BlogDetail> = {
       "backpacker",
       "food travel",
     ],
-    content: `
-## The Heart of Varanasi's Street Food Culture
+    content: `## The Heart of Varanasi's Street Food Culture
 
 Nestled in the bustling lanes of Khojwan, Bhelupur, Gopi Chaat Bhandar stands as an iconic institution in Varanasi's culinary landscape. This humble yet legendary street food vendor has become a pilgrimage site for food enthusiasts, backpackers, and locals alike who seek authentic, unadulterated flavors of the holy city.
 
 ### A Legacy of Flavor
 
-Walking up to Gopi Chaat Bhandar feels like stepping into the soul of Varanasi. The cramped, energetic stall is perpetually crowded with hungry customers—tourists and locals sharing the same wooden benches, the same stories, the same unforgettable experience. The vendor, with practiced precision, prepares each chaat with meticulous care, his hands moving in a rhythm perfected over decades.
-
-The beauty of this place lies not in its ambiance or presentation, but in the raw, authentic flavors that transport you to the very essence of North Indian street food culture. Every bite tells a story of tradition, passion, and culinary mastery passed down through generations.
+Walking up to Gopi Chaat Bhandar feels like stepping into the soul of Varanasi. The cramped, energetic stall is perpetually crowded with hungry customers—tourists and locals sharing the same wooden benches, the same stories, the same unforgettable experience.
 
 ### The Must-Try Specialties
 
-**Tomato Chaat** - The undisputed star of the menu. Crispy papdi (fried wafers) topped with boiled potatoes, chickpeas, and a generous helping of tangy tomato curry. The balance of spices is impeccable—not too spicy, perfectly tangy, with a subtle sweetness that lingers. At just ₹20-30, it's an absolute steal and the reason most regulars keep coming back.
+**Tomato Chaat** - The undisputed star of the menu. Crispy papdi topped with boiled potatoes, chickpeas, and a generous helping of tangy tomato curry. At just Rs. 20-30, it's an absolute steal.
 
-**Aloo Tikki** - Golden, crispy potato patties that are fried to perfection. Served with tamarind chutney and mint yogurt, each bite delivers a satisfying crunch followed by a creamy, spiced potato interior. The tikki here is less about the potato and more about the technique—you can taste the difference.
+**Aloo Tikki** - Golden, crispy potato patties served with tamarind chutney and mint yogurt.
 
-**Dahi Golgappa** - Also known as dahi puri or gol gappa, this is the playful, interactive chaat experience. Hollow, crispy spheres filled with spiced potatoes and chickpeas, then dunked into a creamy yogurt base infused with tamarind and spices. It's messy, it's fun, and it's absolutely delicious.
+**Dahi Golgappa** - Hollow, crispy spheres filled with spiced potatoes and chickpeas, dunked into a creamy yogurt base.
 
-**Pani Puri** - The classic street food that defines Indian snacking. The same hollow spheres, but this time filled with a tangy, spiced water that makes your taste buds dance. The vendor's pani (spiced water) is legendary—a perfect blend of tamarind, mint, and secret spices that keeps people coming back for more.
-
-### The Experience
-
-What makes Gopi Chaat Bhandar truly special is the experience itself. You're not just eating food; you're participating in a centuries-old tradition. The vendor knows his craft intimately—he can tell by your expression whether you want more spice, more tang, or more sweetness. He'll adjust the chaat to your preference with a knowing smile.
-
-The crowd is a mix of everyone—backpackers on a budget, families grabbing a quick snack, students on their lunch break, and spiritual seekers looking for authentic Varanasi. There's a beautiful democracy to the place where everyone is equal, everyone is hungry, and everyone is united by the love of good food.
+**Pani Puri** - The classic street food that defines Indian snacking. The vendor's pani is legendary.
 
 ### Practical Information
 
-**Location:** Peace Point Rd, near Union Bank of India, Khojwan, Bhelupur, Varanasi, Uttar Pradesh 221005
+**Location:** Peace Point Rd, near Union Bank of India, Khojwan, Bhelupur, Varanasi 221005
 
-**Price Range:** ₹1-200 per item (most items are ₹20-50)
+**Price Range:** Rs. 20-50 per item
 
-**Operating Hours:** Open daily, typically until 10 PM
+**Operating Hours:** Open daily until 10 PM
 
-**Best Time to Visit:** Early evening (5-8 PM) for the freshest preparations and the most vibrant atmosphere. Avoid peak lunch hours if you prefer a quieter experience.
-
-**Pro Tips:**
-- Arrive hungry—the portions are generous
-- Bring cash; not all vendors accept cards
-- Don't be shy about asking for recommendations
-- The tomato chaat is non-negotiable
-- Pair your meal with a cold drink from a nearby vendor
-
-### Why Backpackers Love It
-
-For budget travelers and backpackers exploring Varanasi, Gopi Chaat Bhandar is a rite of passage. It's affordable, authentic, and unforgettable. You'll meet fellow travelers here, share stories, and bond over the shared experience of authentic Indian street food. It's these moments that transform a trip into a journey.
+**Best Time to Visit:** Early evening (5-8 PM) for the freshest preparations.
 
 ### The Verdict
 
-Gopi Chaat Bhandar isn't just a food stall; it's a cultural institution. It represents the unfiltered, authentic Varanasi that exists beyond the temples and ghats. It's where tradition lives, where flavors are sacred, and where every rupee spent is an investment in an experience you'll remember for a lifetime.
-
-If you're visiting Varanasi and you skip Gopi Chaat Bhandar, you've missed an essential piece of the city's soul. Come hungry, come curious, and come ready to fall in love with the simplicity and perfection of authentic Indian street food.
+Gopi Chaat Bhandar isn't just a food stall; it's a cultural institution. If you're visiting Varanasi and you skip it, you've missed an essential piece of the city's soul.
 
 **Rating:** 4.2/5 (525+ reviews)
 
-**Perfect For:** Budget travelers, food enthusiasts, backpackers, families, anyone seeking authentic Varanasi flavors
-    `,
+**Perfect For:** Budget travelers, food enthusiasts, backpackers, families`,
   },
   "jaikara-silk-house": {
     id: "2",
@@ -177,98 +154,234 @@ If you're visiting Varanasi and you skip Gopi Chaat Bhandar, you've missed an es
       "craftsmanship",
       "silk weaving",
     ],
-    content: `
-## The Legacy of Banarasi Silk: Jaikara Silk House
+    content: `## The Legacy of Banarasi Silk: Jaikara Silk House
 
-In the heart of Varanasi's historic silk district lies Jaikara Silk House—a sanctuary for those seeking authentic Banarasi silk sarees that represent centuries of weaving mastery. This isn't just a shop; it's a living museum of Indian textile heritage where every saree tells a story of artistry, tradition, and uncompromising quality.
+In the heart of Varanasi's historic silk district lies Jaikara Silk House—a sanctuary for those seeking authentic Banarasi silk sarees that represent centuries of weaving mastery. This isn't just a shop; it's a living museum of Indian textile heritage.
 
 ### The Soul of Banarasi Silk
 
-Banarasi silk sarees are more than just garments; they are investments in heritage. Each saree is a masterpiece created by skilled weavers who have inherited their craft through generations. The distinctive characteristics—the rich silk, the intricate zari (gold thread) work, the elaborate patterns—make Banarasi sarees the most coveted in India and across the world.
-
-Jaikara Silk House has positioned itself as a custodian of this tradition, carefully curating collections that honor the legacy of Varanasi's weaving community while meeting the contemporary tastes of modern buyers.
+Banarasi silk sarees are more than just garments; they are investments in heritage. Each saree is a masterpiece created by skilled weavers who have inherited their craft through generations. The distinctive characteristics—the rich silk, the intricate zari (gold thread) work, the elaborate patterns—make Banarasi sarees the most coveted in India.
 
 ### The Jaikara Experience
 
-Walking into Jaikara Silk House is like stepping into a treasure trove of colors, textures, and patterns. The shop is meticulously organized with silk sarees displayed on wooden racks, each one a testament to the weaver's skill. The ambiance is warm and inviting—the lighting is carefully designed to showcase the true colors and sheen of the silk.
-
-What sets Jaikara apart is the personalized service. The staff members are knowledgeable, passionate, and genuinely interested in helping you find the perfect saree. They understand that buying a Banarasi saree is a significant decision, and they approach it with the respect it deserves.
+Walking into Jaikara Silk House is like stepping into a treasure trove of colors, textures, and patterns. The staff members are knowledgeable, passionate, and genuinely interested in helping you find the perfect saree.
 
 ### Collections That Inspire
 
-**Pure Katan Silk Sarees** - The crown jewel of any collection. Made from 100% pure silk with intricate zari work, these sarees are perfect for weddings and festive occasions. The Katan silk has a distinctive weight and drape that makes it instantly recognizable. Available in vibrant colors like rani pink, deep maroon, royal blue, and traditional gold, each saree is a statement piece.
+**Pure Katan Silk Sarees** - Made from 100% pure silk with intricate zari work, perfect for weddings and festive occasions.
 
-**Gold Zari Embroidered Sarees** - The hallmark of Banarasi craftsmanship. The intricate floral motifs, geometric patterns, and traditional designs are all hand-woven using real gold thread. The zari work catches the light beautifully, creating an ethereal glow that's perfect for special occasions.
+**Gold Zari Embroidered Sarees** - The hallmark of Banarasi craftsmanship with intricate floral motifs hand-woven using real gold thread.
 
-**Contemporary Designs** - While honoring tradition, Jaikara also offers modern interpretations of classic Banarasi designs. These pieces appeal to younger buyers and those seeking a blend of tradition and contemporary aesthetics.
-
-**Seasonal Collections** - The shop regularly updates its inventory with seasonal collections, ensuring that there's always something fresh and exciting to explore.
-
-### The Craftsmanship Behind Every Saree
-
-Understanding the craftsmanship is key to appreciating the value of a Banarasi silk saree. Each saree requires weeks, sometimes months, of meticulous hand-weaving. The weavers work on traditional wooden looms, creating patterns that are passed down through oral tradition and family knowledge.
-
-The zari work alone can take several weeks to complete. Master craftsmen carefully hand-weave the gold thread into the silk, creating patterns that are both intricate and durable. This is not mass production; this is art.
-
-Jaikara Silk House works directly with weavers, ensuring fair compensation and supporting the continuation of this ancient craft. When you buy from Jaikara, you're not just getting a beautiful saree; you're supporting a community of artisans.
-
-### Why Customers Love Jaikara
-
-**Authenticity** - Every saree is genuine Banarasi silk. No shortcuts, no compromises. The staff can tell you the exact weaving technique, the quality of silk used, and the story behind each piece.
-
-**Quality** - The sarees are carefully inspected for quality. The silk is premium, the zari work is meticulous, and the colors are vibrant and long-lasting.
-
-**Service** - The staff members are patient, knowledgeable, and genuinely interested in helping you find the right saree. They'll explain the differences between various types of silk, help you choose colors that suit your skin tone, and provide styling advice.
-
-**Fair Pricing** - While Banarasi silk sarees are an investment, Jaikara offers competitive pricing without compromising on quality. You're paying for the craftsmanship, not inflated retail markups.
-
-**Pan-India Delivery** - Can't visit in person? Jaikara offers nationwide delivery. Simply send them a photo of the saree you're interested in along with your pincode, and they'll help you complete the purchase.
-
-### The Collections We Loved
-
-**Rani Pink Katan Silk with Gold Zari** - A stunning combination of vibrant rani pink silk with elegant gold zari floral motifs. The heavily woven Banarasi pallu (the decorative end of the saree) features intricate patterns that catch the light beautifully. Perfect for weddings and festive occasions.
-
-**Deep Maroon with Traditional Patterns** - A classic choice that exudes elegance and sophistication. The traditional Banarasi patterns in gold zari create a timeless appeal. This is the kind of saree that becomes a family heirloom.
-
-**Royal Blue with Subtle Embroidery** - For those seeking something slightly more understated, this royal blue saree with subtle gold embroidery is a perfect choice. It's elegant without being overwhelming, traditional without being predictable.
+**Contemporary Designs** - Modern interpretations of classic Banarasi designs that appeal to younger buyers.
 
 ### Practical Information
 
-**Location:** C 26, 36 A-4, Ramkatora Rd, Ramkatora, Piplani Katra, Jaitpura, Varanasi, Uttar Pradesh 221001
+**Location:** C 26, 36 A-4, Ramkatora Rd, Varanasi 221001
 
 **Contact:** +91 86040 83953
 
-**Website:** jaikarasilkhouse.com
-
-**Operating Hours:** Open daily, typically until 9 PM
+**Operating Hours:** Open daily until 9 PM
 
 **Payment Options:** Cash, card, and online transfers accepted
 
 **Delivery:** Pan-India delivery available
 
-### Pro Tips for Shopping
+### Supporting Artisans
 
-1. **Go with Time** - Don't rush. Take time to explore the collection, feel the silk, and understand the craftsmanship.
+By choosing Jaikara Silk House, you're making a conscious choice to support traditional artisans and weavers. You're investing in a craft that has been perfected over centuries and ensuring that this beautiful tradition continues for generations to come.
 
-2. **Ask Questions** - The staff loves talking about their sarees. Ask about the weaving technique, the silk quality, and the inspiration behind the designs.
-
-3. **Try Before You Buy** - If possible, try the saree on. Banarasi sarees have a specific drape, and it's important to see how it looks on you.
-
-4. **Understand the Price** - A genuine Banarasi silk saree is an investment. Understand what you're paying for—the silk quality, the zari work, and the craftsmanship.
-
-5. **Care Instructions** - Ask for care instructions. Banarasi silk sarees require special care to maintain their beauty and longevity.
-
-### The Verdict
-
-Jaikara Silk House is more than just a shop; it's a celebration of Indian textile heritage. Whether you're a collector of fine sarees, a bride looking for the perfect wedding saree, or a traveler seeking an authentic piece of Varanasi to take home, Jaikara delivers on all fronts.
-
-The combination of authentic craftsmanship, premium quality, personalized service, and fair pricing makes Jaikara Silk House a must-visit destination for anyone interested in Banarasi silk sarees.
+Every saree is a masterpiece. Every purchase is a vote for heritage, craftsmanship, and authenticity.
 
 **Rating:** 5.0/5 (6 reviews)
 
-**Perfect For:** Brides, collectors, gift-givers, anyone seeking authentic Banarasi silk sarees, cultural enthusiasts
+**Perfect For:** Brides, collectors, gift-givers, anyone seeking authentic Banarasi silk sarees`,
+  },
+};
 
-### Supporting Artisans
+function renderContent(content: string) {
+  const lines = content.split("\n");
+  return lines.map((line, i) => {
+    if (line.startsWith("## ")) {
+      return (
+        <h2 key={i} className="text-2xl font-serif font-bold mt-8 mb-4 text-gray-900">
+          {line.replace("## ", "")}
+        </h2>
+      );
+    } else if (line.startsWith("### ")) {
+      return (
+        <h3 key={i} className="text-xl font-semibold mt-6 mb-3 text-gray-800">
+          {line.replace("### ", "")}
+        </h3>
+      );
+    } else if (line.trim() === "") {
+      return <br key={i} />;
+    } else {
+      const parts = line.split(/(\*\*[^*]+\*\*)/);
+      return (
+        <p key={i} className="text-gray-700 leading-relaxed mb-2">
+          {parts.map((part, j) =>
+            part.startsWith("**") && part.endsWith("**") ? (
+              <strong key={j}>{part.replace(/\*\*/g, "")}</strong>
+            ) : (
+              part
+            )
+          )}
+        </p>
+      );
+    }
+  });
+}
 
-By choosing Jaikara Silk House, you're making a conscious choice to support traditional artisans and weavers. You're investing in a craft that has been perfected over centuries and ensuring that this beautiful tradition continues for ge
-(Content truncated due to size limit. Use line ranges to read remaining content)
+export default function Blogs() {
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+  const selectedPost = selectedSlug ? blogDetails[selectedSlug] : null;
+
+  if (selectedPost) {
+    return (
+      <div className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
+          <button
+            onClick={() => setSelectedSlug(null)}
+            className="mb-6 text-sm text-gray-500 hover:text-primary transition-colors flex items-center gap-1"
+          >
+            ← Back to Blogs
+          </button>
+
+          <img
+            src={selectedPost.image}
+            alt={selectedPost.title}
+            className="w-full h-64 object-cover rounded-2xl mb-6"
+          />
+
+          <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
+            {selectedPost.category}
+          </span>
+
+          <h1 className="text-3xl font-serif font-bold mt-4 mb-2 text-gray-900">
+            {selectedPost.title}
+          </h1>
+
+          <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+            <span className="flex items-center gap-1">
+              <Clock size={14} /> {selectedPost.readTime}
+            </span>
+            <span className="flex items-center gap-1">
+              <Star size={14} className="text-yellow-500" />
+              {selectedPost.rating} ({selectedPost.reviews} reviews)
+            </span>
+          </div>
+
+          
+            href={selectedPost.locationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-sm text-blue-600 hover:underline mb-8"
+          >
+            <MapPin size={14} /> {selectedPost.location}
+          </a>
+
+          <div className="text-gray-700">{renderContent(selectedPost.content)}</div>
+
+          <hr className="my-8 border-gray-200" />
+
+          {/* Tags */}
+          <div>
+            <p className="text-sm font-semibold text-gray-700 mb-3">Tags</p>
+            <div className="flex flex-wrap gap-2">
+              {selectedPost.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs bg-yellow-50 text-yellow-800 border border-yellow-200 px-3 py-1 rounded-full"
+                >
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Ready to Explore CTA */}
+          <div
+            className="mt-10 rounded-2xl overflow-hidden relative"
+            style={{
+              backgroundImage: `url(${selectedPost.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="absolute inset-0 bg-black/60" />
+            <div className="relative p-8">
+              <h3 className="text-2xl font-bold text-white mb-2">Ready to Explore?</h3>
+              <p className="text-white/90 mb-6">
+                Visit {selectedPost.location} and experience the magic of Varanasi firsthand.
+              </p>
+              
+                href={selectedPost.locationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  className="bg-transparent text-white border-white hover:bg-white/10 gap-2"
+                >
+                  Get Directions Now <ArrowRight size={16} />
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-4 py-10">
+        <h1 className="text-4xl font-serif font-bold text-gray-900 mb-2">From the Ghats</h1>
+        <p className="text-gray-500 mb-10">
+          Hidden spots, local stories, and honest guides from Holy Ganges Dorms.
+        </p>
+
+        <div className="grid gap-8 md:grid-cols-2">
+          {blogPosts.map((post) => (
+            <Card
+              key={post.id}
+              className="overflow-hidden border border-gray-200 rounded-2xl hover:shadow-md transition-shadow cursor-pointer"
+              onClick={() => setSelectedSlug(post.slug)}
+            >
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-5">
+                <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
+                  {post.category}
+                </span>
+                <h2 className="text-lg font-semibold text-gray-900 mt-3 mb-2 leading-snug">
+                  {post.title}
+                </h2>
+                <p className="text-sm text-gray-500 mb-4 line-clamp-3">{post.excerpt}</p>
+                <div className="flex items-center justify-between text-xs text-gray-400">
+                  <span className="flex items-center gap-1">
+                    <Clock size={12} /> {post.readTime}
+                  </span>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-primary text-xs p-0 h-auto hover:bg-transparent"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedSlug(post.slug);
+                    }}
+                  >
+                    Read more <ArrowRight size={12} className="ml-1" />
+                  </Button>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

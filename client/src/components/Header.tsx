@@ -12,39 +12,32 @@ export default function Header() {
             alt="Holy Ganges Dorms"
             className="w-10 h-10 rounded-full object-cover"
           />
-
           <h1 className="text-lg font-semibold text-primary">
             Holy Ganges Dorms
           </h1>
         </div>
-
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8">
           <a href="/#map" className="text-sm hover:text-primary transition-colors">
-            Walking Map
+            Location 📍
           </a>
-
           <a href="/#food" className="text-sm hover:text-primary transition-colors">
             Street Food
           </a>
-
           <a href="/#shopping" className="text-sm hover:text-primary transition-colors">
             Treasures
           </a>
-
-          <a href="/#aarti" className="text-sm hover:text-primary transition-colors">
-            Aarti
-          </a>
-
+        
           <a href="/#packing" className="text-sm hover:text-primary transition-colors">
             Backpack
           </a>
-
           <a href="/gallery" className="text-sm hover:text-primary transition-colors">
             Gallery
           </a>
+          <a href="/blogs" className="text-sm hover:text-primary transition-colors">
+            Blogs
+          </a>
         </nav>
-
         {/* Mobile Navigation */}
         <div className="md:hidden">
           <Navbar />

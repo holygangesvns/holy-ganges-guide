@@ -17,7 +17,7 @@ export default function Navbar() {
       {/* DRAWER PORTAL */}
       {menuOpen && (
         <>
-          {/* OVERLAY - Blurs entire page */}
+          {/* OVERLAY */}
           <div
             className="fixed inset-0 z-40 bg-black/40"
             style={{
@@ -29,7 +29,6 @@ export default function Navbar() {
 
           {/* SIDE MENU */}
           <div className="fixed right-0 top-0 h-screen w-72 bg-white shadow-2xl p-6 flex flex-col gap-6 overflow-y-auto z-50">
-
             {/* CLOSE */}
             <button
               className="self-end"
@@ -40,7 +39,6 @@ export default function Navbar() {
 
             {/* LINKS */}
             <nav className="flex flex-col gap-5 text-lg text-gray-700">
-
               <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
               <a href="/#map" onClick={() => setMenuOpen(false)}>Walking Map</a>
               <a href="/#food" onClick={() => setMenuOpen(false)}>Street Food</a>
@@ -48,9 +46,8 @@ export default function Navbar() {
               <a href="/#aarti" onClick={() => setMenuOpen(false)}>Aarti</a>
               <a href="/#packing" onClick={() => setMenuOpen(false)}>Backpack</a>
               <a href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
-
+              <a href="/blogs" onClick={() => setMenuOpen(false)}>Blogs</a>
             </nav>
-
           </div>
         </>
       )}
